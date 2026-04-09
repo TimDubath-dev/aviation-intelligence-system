@@ -17,7 +17,8 @@ ZHAW "AI Applications" FS26 — Semester Project by **Tim Dubath**.
 
 A multimodal AI application that, from a single aircraft photo and a route (origin → destination airport), identifies the aircraft variant, predicts whether it can realistically fly the requested route, and explains the verdict in natural language grounded in retrieved documents.
 
-> **Live demo:** _coming soon — Hugging Face Space URL will be added here_
+> **Live demo:** https://huggingface.co/spaces/dubattim/aviation-intelligence-system
+> **Source:** https://github.com/TimDubath-dev/aviation-intelligence-system
 
 ## Overview
 

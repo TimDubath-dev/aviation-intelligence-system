@@ -100,7 +100,8 @@ _To be filled during M2–M4._
 ## 5. Deployment
 
 - **Platform:** Hugging Face Spaces (Gradio SDK)
-- **URL:** _to be added after deployment_
+- **URL:** https://huggingface.co/spaces/dubattim/aviation-intelligence-system
+- **Source:** https://github.com/TimDubath-dev/aviation-intelligence-system
 - **Separation of training and inference:** training scripts in `src/*/train*.py` produce artifacts that are pushed to the HF Hub; the deployed app `app/app.py` only loads and runs inference.
 - **Screenshots:** see `docs/screenshots/`
 
