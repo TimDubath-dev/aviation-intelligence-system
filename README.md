@@ -8,7 +8,7 @@ sdk_version: 5.7.0
 app_file: app/app.py
 pinned: false
 license: mit
-short_description: Identify an aircraft, decide if it can fly a route, and explain.
+short_description: Identify aircraft, check route, explain in plain English.
 ---
 
 # Aviation Intelligence System
