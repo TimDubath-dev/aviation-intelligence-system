@@ -6,6 +6,8 @@ __pycache__/
 
 # --- training data: large, regenerable, NOT shipped ---
 data/raw/fgvc_aircraft/
+data/raw/extra_images/         # Wikimedia Commons scrape (CV training only)
+data/raw/opensky/              # OpenSky aircraft DB raw CSV (~100 MB)
 data/processed/route_dataset.csv
 data/hf_cache/
 checkpoints/

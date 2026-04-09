@@ -9,6 +9,7 @@ from pathlib import Path
 import pandas as pd
 
 from src.cv import infer as cv_infer
+from src.cv import ocr as cv_ocr
 from src.nlp import prompts
 from src.nlp.generate import generate
 from src.nlp.retriever import Retriever
@@ -46,6 +47,7 @@ class PipelineResult:
     feasibility: dict
     explanation: str
     sources: list[str]
+    ocr: dict | None = None  # {registration, variant, ocr_text, used}
 
 
 def lookup_airport(iata: str) -> dict:
@@ -66,10 +68,34 @@ def lookup_specs(variant: str) -> dict:
 
 
 def run(image_path: str, origin_iata: str, dest_iata: str,
-        strategy: str = "rag", llm: str = "openai") -> PipelineResult:
+        strategy: str = "rag", llm: str = "openai",
+        use_ocr_tiebreaker: bool = True) -> PipelineResult:
     # 1) CV
     top5 = cv_infer.predict(image_path, top_k=5)
     variant = top5[0]["label"]
+
+    # 1b) Optional OCR tiebreaker — read the fuselage registration and, if it
+    # corresponds to a known aircraft whose variant is in the CV top-5, prefer
+    # that variant. We never override with something the CV didn't see.
+    ocr_info: dict | None = None
+    if use_ocr_tiebreaker:
+        try:
+            ocr_info = cv_ocr.detect(image_path)
+            ocr_variant = ocr_info.get("variant")
+            top5_labels = [r["label"] for r in top5]
+            if ocr_variant and ocr_variant in top5_labels and ocr_variant != variant:
+                variant = ocr_variant
+                # promote it to top-1 in the displayed list
+                top5 = sorted(
+                    top5,
+                    key=lambda r: (r["label"] != ocr_variant, -r["score"]),
+                )
+                ocr_info["used"] = True
+            else:
+                ocr_info["used"] = False
+        except Exception as e:
+            print(f"[pipeline] OCR step failed: {e}")
+            ocr_info = None
 
     # 2) Spec lookup
     specs = lookup_specs(variant)
@@ -118,4 +144,5 @@ def run(image_path: str, origin_iata: str, dest_iata: str,
         feasibility=feas,
         explanation=explanation,
         sources=sources,
+        ocr=ocr_info,
     )

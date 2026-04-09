@@ -24,14 +24,14 @@ DISCLAIMER = (
 )
 
 
-def analyse(image, origin, destination, strategy, llm):
+def analyse(image, origin, destination, strategy, llm, use_ocr):
     if image is None or not origin or not destination:
-        return "Please provide an image, origin and destination.", {}, "", ""
+        return "Please provide an image, origin and destination.", {}, "", "", ""
     try:
         res = run(image, origin.strip().upper(), destination.strip().upper(),
-                  strategy=strategy, llm=llm)
+                  strategy=strategy, llm=llm, use_ocr_tiebreaker=use_ocr)
     except Exception as e:
-        return f"Error: {e}", {}, "", ""
+        return f"Error: {e}", {}, "", "", ""
 
     cv_label = {r["label"]: float(r["score"]) for r in res.cv_top5}
     verdict = (
@@ -41,7 +41,27 @@ def analyse(image, origin, destination, strategy, llm):
         f"Great-circle distance: **{res.distance_km:.0f} km**"
     )
     sources = "\n".join(f"- {s}" for s in res.sources) or "_(none — strategy without RAG)_"
-    return verdict, cv_label, res.explanation, sources
+
+    if res.ocr:
+        if res.ocr.get("used"):
+            ocr_md = (
+                f"🔍 **OCR tiebreaker applied** — found registration "
+                f"`{res.ocr['registration']}` on the fuselage → mapped to "
+                f"**{res.ocr['variant']}** in the OpenSky aircraft database.  "
+                f"This promoted `{res.ocr['variant']}` to top-1."
+            )
+        elif res.ocr.get("registration"):
+            ocr_md = (
+                f"🔍 OCR found registration `{res.ocr['registration']}` "
+                f"({'matched ' + res.ocr['variant'] if res.ocr.get('variant') else 'not in registry'}) "
+                f"— not used because it isn't in the CV top-5."
+            )
+        else:
+            ocr_md = "🔍 OCR did not find a readable aircraft registration."
+    else:
+        ocr_md = ""
+
+    return verdict, cv_label, res.explanation, sources, ocr_md
 
 
 with gr.Blocks(title="Aviation Intelligence System") as demo:
@@ -61,17 +81,23 @@ with gr.Blocks(title="Aviation Intelligence System") as demo:
                 label="NLP strategy (ablation)",
             )
             llm = gr.Radio(["openai", "anthropic"], value="openai", label="LLM provider")
+            use_ocr = gr.Checkbox(
+                value=True,
+                label="Use OCR tiebreaker (read fuselage registration)",
+                info="Looks for an aircraft registration in the photo and uses it to promote the matching variant in the CV top-5.",
+            )
             btn = gr.Button("Analyse", variant="primary")
         with gr.Column():
             verdict_md = gr.Markdown()
             cv_out = gr.Label(label="Aircraft (top-5)", num_top_classes=5)
+            ocr_md = gr.Markdown()
             explanation = gr.Markdown(label="Explanation")
             sources_md = gr.Markdown(label="Retrieved sources")
 
     btn.click(
         analyse,
-        inputs=[img, origin, dest, strategy, llm],
-        outputs=[verdict_md, cv_out, explanation, sources_md],
+        inputs=[img, origin, dest, strategy, llm, use_ocr],
+        outputs=[verdict_md, cv_out, explanation, sources_md, ocr_md],
     )
 
     EXAMPLES_DIR = Path(__file__).parent / "examples"

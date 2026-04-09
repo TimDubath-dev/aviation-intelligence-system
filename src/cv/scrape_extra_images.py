@@ -31,8 +31,19 @@ MANIFEST = OUT_DIR / "_manifest.csv"
 
 MAX_PER_CLASS = 40
 MIN_SIZE = 256  # px on the short side
-HEADERS = {"User-Agent": "ZHAW-AviationIntelligence/0.1 (academic project)"}
+
+# Wikimedia requires a descriptive UA per https://meta.wikimedia.org/wiki/User-Agent_policy
+# Format: ToolName/Version (contact URL or email) Library/Version
+HEADERS = {
+    "User-Agent": (
+        "ZHAW-AviationIntelligence/0.2 "
+        "(https://github.com/TimDubath-dev/aviation-intelligence-system; "
+        "academic project) python-requests/2.32"
+    ),
+    "Accept": "image/*,*/*;q=0.8",
+}
 COMMONS_API = "https://commons.wikimedia.org/w/api.php"
+SLEEP_BETWEEN = 1.2  # seconds — Wikimedia is happy with ~1 req/s sustained
 
 
 # --- variant -> Commons category --------------------------------------------
@@ -193,18 +204,27 @@ def file_url(file_title: str, width: int = 800) -> str | None:
     return None, ""
 
 
-def download(url: str, out: Path) -> bool:
-    try:
-        r = requests.get(url, headers=HEADERS, timeout=30)
-        r.raise_for_status()
-        img = Image.open(io.BytesIO(r.content)).convert("RGB")
-        if min(img.size) < MIN_SIZE:
-            return False
-        img.save(out, "JPEG", quality=90)
-        return True
-    except Exception as e:
-        print(f"      ! download failed: {e}")
-        return False
+def download(url: str, out: Path, retries: int = 3) -> bool:
+    for attempt in range(retries):
+        try:
+            r = requests.get(url, headers=HEADERS, timeout=30)
+            if r.status_code == 429:
+                wait = int(r.headers.get("Retry-After", "5"))
+                time.sleep(min(wait, 30))
+                continue
+            r.raise_for_status()
+            img = Image.open(io.BytesIO(r.content)).convert("RGB")
+            if min(img.size) < MIN_SIZE:
+                return False
+            img.save(out, "JPEG", quality=90)
+            return True
+        except requests.HTTPError as e:
+            if e.response is not None and e.response.status_code in (403, 404):
+                return False  # don't retry permanent errors
+            time.sleep(2 * (attempt + 1))
+        except Exception:
+            time.sleep(1)
+    return False
 
 
 def scrape_variant(variant: str, category: str) -> int:
@@ -231,7 +251,7 @@ def scrape_variant(variant: str, category: str) -> int:
         if download(url, out):
             saved += 1
             rows.append((variant, str(out.relative_to(REPO_ROOT)), lic, url))
-        time.sleep(0.2)  # be polite
+        time.sleep(SLEEP_BETWEEN)
     print(f"    saved {saved}/{MAX_PER_CLASS}")
     if rows:
         write_header = not MANIFEST.exists()

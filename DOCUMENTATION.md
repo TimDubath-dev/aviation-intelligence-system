@@ -119,3 +119,22 @@ See [README.md → Quickstart](README.md#quickstart) for full reproduction steps
 - **Dataset bias**: FGVC-Aircraft is dominated by Western commercial airliners; military and Eastern-bloc aircraft are underrepresented. Reported per-manufacturer F1 makes this visible.
 - **LLM hallucination**: even with RAG, the LLM can fabricate plausible specs. The UI displays retrieved sources and an explicit "not flight-planning advice" disclaimer.
 - **API cost & privacy**: user images are sent to OpenAI; the app warns users not to upload personal photos.
+
+---
+
+## 8. Limitations & Future Work
+
+**Known limitations** of the current pipeline:
+
+- **CV is fine-grained-hard.** With 100 visually similar variants and only ~67 training images per class in FGVC, top-1 accuracy is bounded; many top-5 confusions are within the same family (e.g. A330-200 vs A330-300).
+- **Numeric labels are synthetic.** Route feasibility is generated from a deterministic rule (range, ETOPS, headwind, payload) plus 3% noise. The model is therefore evaluating the model's ability to learn the rule, not real-world dispatch feasibility.
+- **RAG corpus is small** (~1.2k chunks, English Wikipedia only). Niche or non-English aircraft information is unreachable.
+- **Out-of-distribution photos.** Web/phone photos differ in angle and lighting from FGVC and degrade CV accuracy. Wikimedia Commons augmentation partially mitigates this.
+
+**Future enhancements** that would meaningfully push the system further:
+
+- **OCR tiebreaker on fuselage text.** Modern airliners carry visible registration codes (e.g. `HB-JNA`) and airline livery branding on the fuselage. An OCR step (e.g. **PaddleOCR**) could extract this text and use it as a tiebreaker when the CV top-5 is ambiguous — the registration uniquely identifies the airframe and can be cross-referenced against an aircraft register database to recover the exact variant. This is especially valuable for distinguishing within-family variants (737-800 vs 737-900) where the visual difference is small.
+- **Stronger CV backbone** (DINOv2-large, EVA-02-large, SigLIP) — would push top-1 toward 90% with the same training budget.
+- **Real route-feasibility data** scraped from historical flight logs (Flightradar24, OpenSky) instead of the synthetic dataset, making the numeric block evaluate true real-world feasibility.
+- **Multilingual RAG** — index Wikipedia in multiple languages and use cross-lingual embeddings.
+- **Active learning loop** — let users correct mispredictions in the live app; collect those corrections as new training data.
