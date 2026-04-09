@@ -1,0 +1,19 @@
+.env
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+
+# --- training data: large, regenerable, NOT shipped ---
+data/raw/fgvc_aircraft/
+data/processed/route_dataset.csv
+data/hf_cache/
+checkpoints/
+wandb/
+runs/
+
+# --- big trained CV checkpoint: pulled from HF Hub at runtime ---
+models/cv/
+
+# --- everything else under data/raw, data/processed, data/rag_corpus,
+#     and models/numeric is intentionally tracked for HF Spaces deployment ---

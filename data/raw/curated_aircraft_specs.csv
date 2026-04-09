@@ -1,0 +1,101 @@
+variant,manufacturer,range_km,mtow_kg,cruise_speed_kmh,max_pax,engine_count,engine_type,first_flight_year,etops_capable
+707-320,Boeing,9265,151320,977,194,4,turbofan,1957,0
+727-200,Boeing,4020,95028,953,189,3,turbofan,1963,0
+737-200,Boeing,4200,52390,780,136,2,turbofan,1967,0
+737-300,Boeing,4400,62820,795,149,2,turbofan,1984,0
+737-400,Boeing,5000,68040,795,188,2,turbofan,1988,0
+737-500,Boeing,4444,60550,795,140,2,turbofan,1989,0
+737-600,Boeing,5648,65090,828,149,2,turbofan,1998,1
+737-700,Boeing,6230,70080,828,149,2,turbofan,1997,1
+737-800,Boeing,5765,79010,828,189,2,turbofan,1997,1
+737-900,Boeing,5925,85130,828,220,2,turbofan,2000,1
+747-100,Boeing,9800,333390,895,452,4,turbofan,1969,0
+747-200,Boeing,12700,377840,907,452,4,turbofan,1970,0
+747-300,Boeing,12400,377840,907,496,4,turbofan,1982,0
+747-400,Boeing,13450,396890,933,524,4,turbofan,1988,0
+757-200,Boeing,7222,115680,854,239,2,turbofan,1982,1
+757-300,Boeing,6421,123830,854,295,2,turbofan,1998,1
+767-200,Boeing,12200,179170,851,255,2,turbofan,1981,1
+767-300,Boeing,11070,186880,851,290,2,turbofan,1986,1
+767-400,Boeing,10415,204120,851,375,2,turbofan,1999,1
+777-200,Boeing,15843,247200,905,440,2,turbofan,1994,1
+777-300,Boeing,11135,299370,905,550,2,turbofan,1997,1
+A300B4,Airbus,5375,165000,847,345,2,turbofan,1972,0
+A310,Airbus,9600,164000,850,280,2,turbofan,1982,1
+A318,Airbus,5750,68000,829,132,2,turbofan,2002,1
+A319,Airbus,6950,75500,828,156,2,turbofan,1995,1
+A320,Airbus,6150,78000,828,180,2,turbofan,1987,1
+A321,Airbus,5950,93500,828,220,2,turbofan,1993,1
+A330-200,Airbus,13450,242000,871,247,2,turbofan,1997,1
+A330-300,Airbus,11750,242000,871,277,2,turbofan,1992,1
+A340-200,Airbus,12400,275000,871,261,4,turbofan,1992,0
+A340-300,Airbus,13700,276500,871,295,4,turbofan,1991,0
+A340-500,Airbus,16670,380000,871,313,4,turbofan,2002,0
+A340-600,Airbus,14450,380000,871,380,4,turbofan,2001,0
+A380,Airbus,15200,575000,903,853,4,turbofan,2005,0
+ATR-42,ATR,1555,18600,556,50,2,turboprop,1984,0
+ATR-72,ATR,1528,23000,511,78,2,turboprop,1988,0
+An-12,Antonov,5700,61000,670,90,4,turboprop,1957,0
+BAE 146-200,British Aerospace,3650,42184,789,100,4,turbofan,1981,0
+BAE 146-300,British Aerospace,3650,44225,789,128,4,turbofan,1987,0
+BAE-125,British Aerospace,5560,12700,743,8,2,turbofan,1962,0
+Beechcraft 1900,Beechcraft,2776,7765,518,19,2,turboprop,1982,0
+Boeing 717,Boeing,2645,54885,811,134,2,turbofan,1998,0
+C-130,Lockheed,3800,79380,592,92,4,turboprop,1954,0
+C-47,Douglas,2575,14100,360,28,2,piston,1941,0
+CRJ-200,Bombardier,3148,24040,786,50,2,turbofan,1991,0
+CRJ-700,Bombardier,3045,34020,829,78,2,turbofan,1999,0
+CRJ-900,Bombardier,2956,38330,829,90,2,turbofan,2001,0
+Cessna 172,Cessna,1185,1111,226,4,1,piston,1955,0
+Cessna 208,Cessna,1982,3970,344,14,1,turboprop,1982,0
+Cessna 525,Cessna,2070,4853,728,7,2,turbofan,1991,0
+Cessna 560,Cessna,3300,7393,795,8,2,turbofan,1987,0
+Challenger 600,Bombardier,5980,19550,852,19,2,turbofan,1978,0
+DC-10,McDonnell Douglas,9600,259459,876,380,3,turbofan,1970,0
+DC-3,Douglas,2400,11430,333,32,2,piston,1935,0
+DC-6,Douglas,4835,48534,507,102,4,piston,1946,0
+DC-8,Douglas,11400,158760,895,259,4,turbofan,1958,0
+DC-9-30,McDonnell Douglas,2778,49090,820,135,2,turbofan,1965,0
+DH-82,De Havilland,486,828,175,2,1,piston,1931,0
+DHC-1,De Havilland Canada,500,1000,222,2,1,piston,1946,0
+DHC-6,De Havilland Canada,1480,5670,338,19,2,turboprop,1965,0
+DHC-8-100,De Havilland Canada,1889,15650,500,39,2,turboprop,1983,0
+DHC-8-300,De Havilland Canada,1711,19500,528,50,2,turboprop,1987,0
+DR-400,Robin,1450,1100,250,4,1,piston,1972,0
+Dornier 328,Dornier,1850,13990,620,33,2,turboprop,1991,0
+E-170,Embraer,3982,38600,890,80,2,turbofan,2002,1
+E-190,Embraer,4537,51800,890,114,2,turbofan,2004,1
+E-195,Embraer,4260,52290,890,124,2,turbofan,2004,1
+EMB-120,Embraer,1750,11990,608,30,2,turboprop,1983,0
+ERJ 135,Embraer,3241,20000,833,37,2,turbofan,1998,0
+ERJ 145,Embraer,2873,22000,833,50,2,turbofan,1995,0
+Embraer Legacy 600,Embraer,6297,22500,834,13,2,turbofan,2000,0
+Eurofighter Typhoon,Eurofighter,2900,23500,2125,1,2,turbofan,1994,0
+F-16A/B,General Dynamics,4220,19200,2120,1,1,turbofan,1974,0
+F/A-18,McDonnell Douglas,3330,23541,1915,1,2,turbofan,1978,0
+Falcon 2000,Dassault,5560,18600,851,10,2,turbofan,1993,0
+Falcon 900,Dassault,7408,21000,890,12,3,turbofan,1984,0
+Fokker 100,Fokker,3170,44450,820,122,2,turbofan,1986,0
+Fokker 50,Fokker,2055,20820,500,68,2,turboprop,1985,0
+Fokker 70,Fokker,3410,39920,820,85,2,turbofan,1993,0
+Global Express,Bombardier,11390,42410,904,19,2,turbofan,1996,0
+Gulfstream IV,Gulfstream,7820,33840,936,19,2,turbofan,1985,0
+Gulfstream V,Gulfstream,12500,40370,941,16,2,turbofan,1995,0
+Hawk T1,BAE Systems,2520,5700,1028,2,1,turbofan,1974,0
+Il-76,Ilyushin,4000,170000,750,140,4,turbofan,1971,0
+L-1011,Lockheed,7410,231330,898,400,3,turbofan,1970,0
+MD-11,McDonnell Douglas,12455,286000,876,410,3,turbofan,1990,0
+MD-80,McDonnell Douglas,4635,67810,811,172,2,turbofan,1979,0
+MD-87,McDonnell Douglas,5170,67810,811,130,2,turbofan,1986,0
+MD-90,McDonnell Douglas,3860,70760,811,172,2,turbofan,1993,0
+Metroliner,Fairchild,2127,7257,500,19,2,turboprop,1969,0
+Model B200,Beechcraft,3185,5670,536,13,2,turboprop,1972,0
+PA-28,Piper,1090,1157,237,4,1,piston,1960,0
+SR-20,Cirrus,1300,1383,293,4,1,piston,1995,0
+Saab 2000,Saab,2868,22999,665,58,2,turboprop,1992,0
+Saab 340,Saab,1732,13155,500,34,2,turboprop,1983,0
+Spitfire,Supermarine,756,3039,594,1,1,piston,1936,0
+Tornado,Panavia,1390,28000,2400,2,2,turbofan,1974,0
+Tu-134,Tupolev,2400,49000,850,84,2,turbofan,1963,0
+Tu-154,Tupolev,5280,100000,913,180,2,turbofan,1968,0
+Yak-42,Yakovlev,4000,57500,820,120,3,turbofan,1975,0

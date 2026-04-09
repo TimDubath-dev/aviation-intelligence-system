@@ -1,0 +1,101 @@
+variant,manufacturer,range_km,mtow_kg,cruise_speed_kmh,max_pax,engine_count,engine_type,first_flight_year,etops_capable,wiki_title,wiki_url,twin_engine
+707-320,Boeing,9265,151320,977,194,4,turbofan,1957,0,Boeing 707,https://en.wikipedia.org/wiki/Boeing_707,False
+727-200,Boeing,4020,95028,953,189,3,turbofan,1963,0,Boeing 727,https://en.wikipedia.org/wiki/Boeing_727,False
+737-200,Boeing,4200,52390,780,136,2,turbofan,1967,0,Boeing 737 Classic,https://en.wikipedia.org/wiki/Boeing_737_Classic,True
+737-300,Boeing,4400,62820,795,149,2,turbofan,1984,0,Boeing 737 Classic,https://en.wikipedia.org/wiki/Boeing_737_Classic,True
+737-400,Boeing,5000,68040,795,188,2,turbofan,1988,0,Boeing 737 Classic,https://en.wikipedia.org/wiki/Boeing_737_Classic,True
+737-500,Boeing,4444,60550,795,140,2,turbofan,1989,0,Boeing 737 Classic,https://en.wikipedia.org/wiki/Boeing_737_Classic,True
+737-600,Boeing,5648,65090,828,149,2,turbofan,1998,1,Boeing 737 Next Generation,https://en.wikipedia.org/wiki/Boeing_737_Next_Generation,True
+737-700,Boeing,6230,70080,828,149,2,turbofan,1997,1,Boeing 737 Next Generation,https://en.wikipedia.org/wiki/Boeing_737_Next_Generation,True
+737-800,Boeing,5765,79010,828,189,2,turbofan,1997,1,Boeing 737 Next Generation,https://en.wikipedia.org/wiki/Boeing_737_Next_Generation,True
+737-900,Boeing,5925,85130,828,220,2,turbofan,2000,1,Boeing 737 Next Generation,https://en.wikipedia.org/wiki/Boeing_737_Next_Generation,True
+747-100,Boeing,9800,333390,895,452,4,turbofan,1969,0,Boeing 747-100,https://en.wikipedia.org/wiki/Boeing_747-100,False
+747-200,Boeing,12700,377840,907,452,4,turbofan,1970,0,Boeing 747-200,https://en.wikipedia.org/wiki/Boeing_747-200,False
+747-300,Boeing,12400,377840,907,496,4,turbofan,1982,0,Boeing 747-300,https://en.wikipedia.org/wiki/Boeing_747-300,False
+747-400,Boeing,13450,396890,933,524,4,turbofan,1988,0,Boeing 747-400,https://en.wikipedia.org/wiki/Boeing_747-400,False
+757-200,Boeing,7222,115680,854,239,2,turbofan,1982,1,Boeing 757,https://en.wikipedia.org/wiki/Boeing_757,True
+757-300,Boeing,6421,123830,854,295,2,turbofan,1998,1,Boeing 757,https://en.wikipedia.org/wiki/Boeing_757,True
+767-200,Boeing,12200,179170,851,255,2,turbofan,1981,1,Boeing 767,https://en.wikipedia.org/wiki/Boeing_767,True
+767-300,Boeing,11070,186880,851,290,2,turbofan,1986,1,Boeing 767,https://en.wikipedia.org/wiki/Boeing_767,True
+767-400,Boeing,10415,204120,851,375,2,turbofan,1999,1,Boeing 767,https://en.wikipedia.org/wiki/Boeing_767,True
+777-200,Boeing,15843,247200,905,440,2,turbofan,1994,1,Boeing 777,https://en.wikipedia.org/wiki/Boeing_777,True
+777-300,Boeing,11135,299370,905,550,2,turbofan,1997,1,Boeing 777,https://en.wikipedia.org/wiki/Boeing_777,True
+A300B4,Airbus,5375,165000,847,345,2,turbofan,1972,0,Airbus A300,https://en.wikipedia.org/wiki/Airbus_A300,True
+A310,Airbus,9600,164000,850,280,2,turbofan,1982,1,Airbus A310,https://en.wikipedia.org/wiki/Airbus_A310,True
+A318,Airbus,5750,68000,829,132,2,turbofan,2002,1,Airbus A318,https://en.wikipedia.org/wiki/Airbus_A318,True
+A319,Airbus,6950,75500,828,156,2,turbofan,1995,1,Airbus A319,https://en.wikipedia.org/wiki/Airbus_A319,True
+A320,Airbus,6150,78000,828,180,2,turbofan,1987,1,Airbus A320,https://en.wikipedia.org/wiki/Airbus_A320,True
+A321,Airbus,5950,93500,828,220,2,turbofan,1993,1,Airbus A321,https://en.wikipedia.org/wiki/Airbus_A321,True
+A330-200,Airbus,13450,242000,871,247,2,turbofan,1997,1,Airbus A330,https://en.wikipedia.org/wiki/Airbus_A330,True
+A330-300,Airbus,11750,242000,871,277,2,turbofan,1992,1,Airbus A330,https://en.wikipedia.org/wiki/Airbus_A330,True
+A340-200,Airbus,12400,275000,871,261,4,turbofan,1992,0,Airbus A340,https://en.wikipedia.org/wiki/Airbus_A340,False
+A340-300,Airbus,13700,276500,871,295,4,turbofan,1991,0,Airbus A340,https://en.wikipedia.org/wiki/Airbus_A340,False
+A340-500,Airbus,16670,380000,871,313,4,turbofan,2002,0,Airbus A340,https://en.wikipedia.org/wiki/Airbus_A340,False
+A340-600,Airbus,14450,380000,871,380,4,turbofan,2001,0,Airbus A340,https://en.wikipedia.org/wiki/Airbus_A340,False
+A380,Airbus,15200,575000,903,853,4,turbofan,2005,0,Airbus A380,https://en.wikipedia.org/wiki/Airbus_A380,False
+ATR-42,ATR,1555,18600,556,50,2,turboprop,1984,0,ATR 42,https://en.wikipedia.org/wiki/ATR_42,True
+ATR-72,ATR,1528,23000,511,78,2,turboprop,1988,0,ATR 72,https://en.wikipedia.org/wiki/ATR_72,True
+An-12,Antonov,5700,61000,670,90,4,turboprop,1957,0,Antonov An-12,https://en.wikipedia.org/wiki/Antonov_An-12,False
+BAE 146-200,British Aerospace,3650,42184,789,100,4,turbofan,1981,0,British Aerospace 146,https://en.wikipedia.org/wiki/British_Aerospace_146,False
+BAE 146-300,British Aerospace,3650,44225,789,128,4,turbofan,1987,0,British Aerospace 146,https://en.wikipedia.org/wiki/British_Aerospace_146,False
+BAE-125,British Aerospace,5560,12700,743,8,2,turbofan,1962,0,British Aerospace 125,https://en.wikipedia.org/wiki/British_Aerospace_125,True
+Beechcraft 1900,Beechcraft,2776,7765,518,19,2,turboprop,1982,0,Beechcraft 1900,https://en.wikipedia.org/wiki/Beechcraft_1900,True
+Boeing 717,Boeing,2645,54885,811,134,2,turbofan,1998,0,Boeing 717,https://en.wikipedia.org/wiki/Boeing_717,True
+C-130,Lockheed,3800,79380,592,92,4,turboprop,1954,0,Lockheed C-130 Hercules,https://en.wikipedia.org/wiki/Lockheed_C-130_Hercules,False
+C-47,Douglas,2575,14100,360,28,2,piston,1941,0,Douglas C-47 Skytrain,https://en.wikipedia.org/wiki/Douglas_C-47_Skytrain,True
+CRJ-200,Bombardier,3148,24040,786,50,2,turbofan,1991,0,Bombardier CRJ100/200,https://en.wikipedia.org/wiki/Bombardier_CRJ100/200,True
+CRJ-700,Bombardier,3045,34020,829,78,2,turbofan,1999,0,Bombardier CRJ700 series,https://en.wikipedia.org/wiki/Bombardier_CRJ700_series,True
+CRJ-900,Bombardier,2956,38330,829,90,2,turbofan,2001,0,Bombardier CRJ700 series,https://en.wikipedia.org/wiki/Bombardier_CRJ700_series,True
+Cessna 172,Cessna,1185,1111,226,4,1,piston,1955,0,Cessna 172,https://en.wikipedia.org/wiki/Cessna_172,False
+Cessna 208,Cessna,1982,3970,344,14,1,turboprop,1982,0,Cessna 208 Caravan,https://en.wikipedia.org/wiki/Cessna_208_Caravan,False
+Cessna 525,Cessna,2070,4853,728,7,2,turbofan,1991,0,Cessna CitationJet/M2,https://en.wikipedia.org/wiki/Cessna_CitationJet/M2,True
+Cessna 560,Cessna,3300,7393,795,8,2,turbofan,1987,0,Cessna Citation V,https://en.wikipedia.org/wiki/Cessna_Citation_V,True
+Challenger 600,Bombardier,5980,19550,852,19,2,turbofan,1978,0,Bombardier Challenger 600 series,https://en.wikipedia.org/wiki/Bombardier_Challenger_600_series,True
+DC-10,McDonnell Douglas,9600,259459,876,380,3,turbofan,1970,0,McDonnell Douglas DC-10,https://en.wikipedia.org/wiki/McDonnell_Douglas_DC-10,False
+DC-3,Douglas,2400,11430,333,32,2,piston,1935,0,Douglas DC-3,https://en.wikipedia.org/wiki/Douglas_DC-3,True
+DC-6,Douglas,4835,48534,507,102,4,piston,1946,0,Douglas DC-6,https://en.wikipedia.org/wiki/Douglas_DC-6,False
+DC-8,Douglas,11400,158760,895,259,4,turbofan,1958,0,Douglas DC-8,https://en.wikipedia.org/wiki/Douglas_DC-8,False
+DC-9-30,McDonnell Douglas,2778,49090,820,135,2,turbofan,1965,0,McDonnell Douglas DC-9,https://en.wikipedia.org/wiki/McDonnell_Douglas_DC-9,True
+DH-82,De Havilland,486,828,175,2,1,piston,1931,0,De Havilland Tiger Moth,https://en.wikipedia.org/wiki/De_Havilland_Tiger_Moth,False
+DHC-1,De Havilland Canada,500,1000,222,2,1,piston,1946,0,De Havilland Canada DHC-1 Chipmunk,https://en.wikipedia.org/wiki/De_Havilland_Canada_DHC-1_Chipmunk,False
+DHC-6,De Havilland Canada,1480,5670,338,19,2,turboprop,1965,0,De Havilland Canada DHC-6 Twin Otter,https://en.wikipedia.org/wiki/De_Havilland_Canada_DHC-6_Twin_Otter,True
+DHC-8-100,De Havilland Canada,1889,15650,500,39,2,turboprop,1983,0,De Havilland Canada Dash 8,https://en.wikipedia.org/wiki/De_Havilland_Canada_Dash_8,True
+DHC-8-300,De Havilland Canada,1711,19500,528,50,2,turboprop,1987,0,De Havilland Canada Dash 8,https://en.wikipedia.org/wiki/De_Havilland_Canada_Dash_8,True
+DR-400,Robin,1450,1100,250,4,1,piston,1972,0,Robin DR400,https://en.wikipedia.org/wiki/Robin_DR400,False
+Dornier 328,Dornier,1850,13990,620,33,2,turboprop,1991,0,Dornier 328,https://en.wikipedia.org/wiki/Dornier_328,True
+E-170,Embraer,3982,38600,890,80,2,turbofan,2002,1,Embraer E-Jet family,https://en.wikipedia.org/wiki/Embraer_E-Jet_family,True
+E-190,Embraer,4537,51800,890,114,2,turbofan,2004,1,Embraer E-Jet family,https://en.wikipedia.org/wiki/Embraer_E-Jet_family,True
+E-195,Embraer,4260,52290,890,124,2,turbofan,2004,1,Embraer E-Jet family,https://en.wikipedia.org/wiki/Embraer_E-Jet_family,True
+EMB-120,Embraer,1750,11990,608,30,2,turboprop,1983,0,Embraer EMB 120 Brasilia,https://en.wikipedia.org/wiki/Embraer_EMB_120_Brasilia,True
+ERJ 135,Embraer,3241,20000,833,37,2,turbofan,1998,0,Embraer ERJ family,https://en.wikipedia.org/wiki/Embraer_ERJ_family,True
+ERJ 145,Embraer,2873,22000,833,50,2,turbofan,1995,0,Embraer ERJ family,https://en.wikipedia.org/wiki/Embraer_ERJ_family,True
+Embraer Legacy 600,Embraer,6297,22500,834,13,2,turbofan,2000,0,Embraer Legacy 600,https://en.wikipedia.org/wiki/Embraer_Legacy_600,True
+Eurofighter Typhoon,Eurofighter,2900,23500,2125,1,2,turbofan,1994,0,Eurofighter Typhoon,https://en.wikipedia.org/wiki/Eurofighter_Typhoon,True
+F-16A/B,General Dynamics,4220,19200,2120,1,1,turbofan,1974,0,General Dynamics F-16 Fighting Falcon,https://en.wikipedia.org/wiki/General_Dynamics_F-16_Fighting_Falcon,False
+F/A-18,McDonnell Douglas,3330,23541,1915,1,2,turbofan,1978,0,McDonnell Douglas F/A-18 Hornet,https://en.wikipedia.org/wiki/McDonnell_Douglas_F/A-18_Hornet,True
+Falcon 2000,Dassault,5560,18600,851,10,2,turbofan,1993,0,Dassault Falcon 2000,https://en.wikipedia.org/wiki/Dassault_Falcon_2000,True
+Falcon 900,Dassault,7408,21000,890,12,3,turbofan,1984,0,Dassault Falcon 900,https://en.wikipedia.org/wiki/Dassault_Falcon_900,False
+Fokker 100,Fokker,3170,44450,820,122,2,turbofan,1986,0,Fokker 100,https://en.wikipedia.org/wiki/Fokker_100,True
+Fokker 50,Fokker,2055,20820,500,68,2,turboprop,1985,0,Fokker 50,https://en.wikipedia.org/wiki/Fokker_50,True
+Fokker 70,Fokker,3410,39920,820,85,2,turbofan,1993,0,Fokker 70,https://en.wikipedia.org/wiki/Fokker_70,True
+Global Express,Bombardier,11390,42410,904,19,2,turbofan,1996,0,Bombardier Global Express,https://en.wikipedia.org/wiki/Bombardier_Global_Express,True
+Gulfstream IV,Gulfstream,7820,33840,936,19,2,turbofan,1985,0,Gulfstream IV,https://en.wikipedia.org/wiki/Gulfstream_IV,True
+Gulfstream V,Gulfstream,12500,40370,941,16,2,turbofan,1995,0,Gulfstream V,https://en.wikipedia.org/wiki/Gulfstream_V,True
+Hawk T1,BAE Systems,2520,5700,1028,2,1,turbofan,1974,0,BAE Systems Hawk,https://en.wikipedia.org/wiki/BAE_Systems_Hawk,False
+Il-76,Ilyushin,4000,170000,750,140,4,turbofan,1971,0,Ilyushin Il-76,https://en.wikipedia.org/wiki/Ilyushin_Il-76,False
+L-1011,Lockheed,7410,231330,898,400,3,turbofan,1970,0,Lockheed L-1011 TriStar,https://en.wikipedia.org/wiki/Lockheed_L-1011_TriStar,False
+MD-11,McDonnell Douglas,12455,286000,876,410,3,turbofan,1990,0,McDonnell Douglas MD-11,https://en.wikipedia.org/wiki/McDonnell_Douglas_MD-11,False
+MD-80,McDonnell Douglas,4635,67810,811,172,2,turbofan,1979,0,McDonnell Douglas MD-80,https://en.wikipedia.org/wiki/McDonnell_Douglas_MD-80,True
+MD-87,McDonnell Douglas,5170,67810,811,130,2,turbofan,1986,0,McDonnell Douglas MD-87,https://en.wikipedia.org/wiki/McDonnell_Douglas_MD-87,True
+MD-90,McDonnell Douglas,3860,70760,811,172,2,turbofan,1993,0,McDonnell Douglas MD-90,https://en.wikipedia.org/wiki/McDonnell_Douglas_MD-90,True
+Metroliner,Fairchild,2127,7257,500,19,2,turboprop,1969,0,Fairchild Swearingen Metroliner,https://en.wikipedia.org/wiki/Fairchild_Swearingen_Metroliner,True
+Model B200,Beechcraft,3185,5670,536,13,2,turboprop,1972,0,Beechcraft Super King Air,https://en.wikipedia.org/wiki/Beechcraft_Super_King_Air,True
+PA-28,Piper,1090,1157,237,4,1,piston,1960,0,Piper PA-28 Cherokee,https://en.wikipedia.org/wiki/Piper_PA-28_Cherokee,False
+SR-20,Cirrus,1300,1383,293,4,1,piston,1995,0,Cirrus SR20,https://en.wikipedia.org/wiki/Cirrus_SR20,False
+Saab 2000,Saab,2868,22999,665,58,2,turboprop,1992,0,Saab 2000,https://en.wikipedia.org/wiki/Saab_2000,True
+Saab 340,Saab,1732,13155,500,34,2,turboprop,1983,0,Saab 340,https://en.wikipedia.org/wiki/Saab_340,True
+Spitfire,Supermarine,756,3039,594,1,1,piston,1936,0,Supermarine Spitfire,https://en.wikipedia.org/wiki/Supermarine_Spitfire,False
+Tornado,Panavia,1390,28000,2400,2,2,turbofan,1974,0,Panavia Tornado,https://en.wikipedia.org/wiki/Panavia_Tornado,True
+Tu-134,Tupolev,2400,49000,850,84,2,turbofan,1963,0,Tupolev Tu-134,https://en.wikipedia.org/wiki/Tupolev_Tu-134,True
+Tu-154,Tupolev,5280,100000,913,180,2,turbofan,1968,0,Tupolev Tu-154,https://en.wikipedia.org/wiki/Tupolev_Tu-154,True
+Yak-42,Yakovlev,4000,57500,820,120,3,turbofan,1975,0,Yakovlev Yak-42,https://en.wikipedia.org/wiki/Yakovlev_Yak-42,False

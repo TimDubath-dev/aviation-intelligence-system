@@ -1,0 +1,18 @@
+# Pinned for Hugging Face Spaces (Linux x86_64, Python 3.10/3.11).
+# Inference-only deps — training-only packages (xgboost, lightgbm, jupyter)
+# are intentionally omitted to keep the Space build small and fast.
+gradio==5.7.0
+numpy>=1.26,<2.0
+pandas>=2.2.0
+scipy>=1.13.0
+scikit-learn>=1.5.0
+pillow>=11.0.0
+torch>=2.5.0
+torchvision>=0.20.0
+transformers>=4.46.0
+sentence-transformers>=3.3.0
+faiss-cpu>=1.9.0
+openai>=1.55.0
+anthropic>=0.40.0
+python-dotenv>=1.0.1
+requests>=2.32.3

@@ -1,0 +1,53 @@
+[project]
+name = "aviation-intelligence-system"
+version = "0.1.0"
+description = "ZHAW FS26 Semester Project — multimodal aviation AI (CV + Numeric ML + NLP/RAG)"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    # core scientific stack
+    "numpy>=1.26,<2.0",  # torch 2.2.x is built against numpy 1.x
+    "pandas>=2.2.3",
+    "scipy>=1.14.1",
+    "scikit-learn>=1.6.0",
+    "matplotlib>=3.9.3",
+    "seaborn>=0.13.2",
+    # CV — torch 2.2.x is the last version with Intel-mac wheels
+    "torch==2.2.2",
+    "torchvision==0.17.2",
+    "transformers>=4.40.0,<4.50.0",
+    "datasets>=3.0.0",
+    "pillow>=11.0.0",
+    "accelerate>=1.0.0",
+    # numeric ML
+    "xgboost>=2.1.0",
+    "lightgbm>=4.5.0",
+    # Note: shap dropped on Intel-mac due to llvmlite build issues;
+    # we use sklearn permutation_importance + XGBoost gain instead.
+    # NLP / RAG
+    "sentence-transformers>=3.3.0",
+    "faiss-cpu>=1.9.0",
+    "openai>=1.55.0",
+    "anthropic>=0.40.0",
+    "tiktoken>=0.8.0",
+    # scraping
+    "requests>=2.32.3",
+    "beautifulsoup4>=4.12.0",
+    "wikipedia-api>=0.7.0",
+    # app
+    "gradio>=5.7.0",
+    "python-dotenv>=1.0.1",
+    # notebooks
+    "jupyter>=1.0.0",
+    "ipykernel>=6.29.5",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=8.3.0",
+    "ruff>=0.7.0",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
