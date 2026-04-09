@@ -4,7 +4,7 @@ emoji: ✈️
 colorFrom: blue
 colorTo: indigo
 sdk: gradio
-sdk_version: 5.7.0
+sdk_version: 5.49.1
 app_file: app/app.py
 pinned: false
 license: mit
