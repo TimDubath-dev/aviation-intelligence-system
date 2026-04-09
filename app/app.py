@@ -78,10 +78,10 @@ with gr.Blocks(title="Aviation Intelligence System") as demo:
     if EXAMPLES_DIR.exists():
         gr.Examples(
             examples=[
-                [str(EXAMPLES_DIR / "airbus_a320.jpg"), "ZRH", "JFK"],
-                [str(EXAMPLES_DIR / "airbus_a380.jpg"), "DXB", "SYD"],
-                [str(EXAMPLES_DIR / "boeing_747.jpg"), "LHR", "HKG"],
-                [str(EXAMPLES_DIR / "boeing_777.jpg"), "FRA", "GRU"],
+                [str(EXAMPLES_DIR / "a320.jpg"), "ZRH", "JFK"],
+                [str(EXAMPLES_DIR / "a380.jpg"), "DXB", "SYD"],
+                [str(EXAMPLES_DIR / "747_400.jpg"), "LHR", "HKG"],
+                [str(EXAMPLES_DIR / "777_200.jpg"), "FRA", "GRU"],
                 [str(EXAMPLES_DIR / "cessna_172.jpg"), "ZRH", "BSL"],
             ],
             inputs=[img, origin, dest],
