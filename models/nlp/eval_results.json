@@ -1,0 +1,1202 @@
+[
+  {
+    "question_id": 0,
+    "variant": "A380",
+    "origin": "DXB",
+    "dest": "SYD",
+    "feasible": true,
+    "strategy": "zero_shot",
+    "provider": "openai",
+    "response": "The Airbus A380 has a range of approximately 15,200 km, which is sufficient to cover the great-circle distance of about 12,050 km from Dubai (DXB) to Sydney (SYD). However, the A380 is not ETOPS-capable, meaning it cannot operate on routes that are far from suitable emergency landing airports over extended distances. Despite this limitation, the route is feasible based on range alone. \n\nThis is an educational tool, not flight-planning advice."
+  },
+  {
+    "question_id": 0,
+    "variant": "A380",
+    "origin": "DXB",
+    "dest": "SYD",
+    "feasible": true,
+    "strategy": "zero_shot",
+    "provider": "anthropic",
+    "response": "# A380 Dubai to Sydney Analysis\n\nThe A380 **could realistically fly this route**. With a maximum range of ~15,200 km and a great-circle distance of 12,050 km, there's a comfortable 3,150 km safety margin. Actual flight paths include some routing deviation, but this remains well within capability. However, the A380 lacks ETOPS certification, which means it cannot legally operate on long transoceanic routes that require extended twin-engine operations\u2014this is the critical regulatory barrier, despite the aircraft's fuel capacity being sufficient.\n\n*Disclaimer: This is an educational tool only and should never be used for actual flight planning or operational decisions.*"
+  },
+  {
+    "question_id": 0,
+    "variant": "A380",
+    "origin": "DXB",
+    "dest": "SYD",
+    "feasible": true,
+    "strategy": "rag",
+    "provider": "openai",
+    "response": "The Airbus A380 has a maximum range of approximately 15,200 km, which is more than sufficient to cover the great-circle distance of about 12,050 km from Dubai (DXB) to Sydney (SYD). Since the route is well within the aircraft's range capabilities, it is feasible for the A380 to operate this flight without the need for refueling. However, it's important to note that the A380 is not ETOPS-capable, which means it cannot operate on routes that require extended operations over water without nearby diversion airports. Nonetheless, this specific route does not present such a requirement. \n\nThis is an educational tool, not flight-planning advice."
+  },
+  {
+    "question_id": 0,
+    "variant": "A380",
+    "origin": "DXB",
+    "dest": "SYD",
+    "feasible": true,
+    "strategy": "rag",
+    "provider": "anthropic",
+    "response": "# A380 Dubai to Sydney Route Assessment\n\n**The A380 cannot realistically operate DXB\u2192SYD without stopping**, despite the numeric probability suggesting feasibility. The A380 has a maximum range of approximately 15,200 km, but the great-circle distance of 12,050 km represents the *theoretical* shortest path\u2014actual flight routing over water requires deviations, headwinds, and mandatory reserves that consume additional fuel. Critically, the A380 is **not ETOPS-certified**, meaning it cannot legally operate extended twin-engine flights over remote oceans far from diversion airports. While the background material discusses A330 ETOPS-240 approval (achieved by 2009), no comparable certification exists for the A380. Operators would need an intermediate stop to comply with regulatory requirements for this 7,500+ nm oceanic crossing.\n\n**Disclaimer:** This is an educational tool only and should not be used for actual flight planning or operational decisions."
+  },
+  {
+    "question_id": 0,
+    "variant": "A380",
+    "origin": "DXB",
+    "dest": "SYD",
+    "feasible": true,
+    "strategy": "rag_fewshot",
+    "provider": "openai",
+    "response": "The Airbus A380 can indeed fly the route from Dubai (DXB) to Sydney (SYD), which has a great-circle distance of approximately 12,050 km. With a range of about 15,200 km, the A380 comfortably exceeds the distance required for this flight. However, it is important to note that the A380 is not ETOPS-capable, which may limit its operational flexibility over oceanic routes. (Educational tool, not flight-planning advice.)"
+  },
+  {
+    "question_id": 0,
+    "variant": "A380",
+    "origin": "DXB",
+    "dest": "SYD",
+    "feasible": true,
+    "strategy": "rag_fewshot",
+    "provider": "anthropic",
+    "response": "Yes. The A380 has a published range of approximately 15,200 km, which exceeds the Dubai\u2013Sydney great-circle distance of ~12,050 km with operational reserves. However, the A380 is not ETOPS-certified, meaning it cannot legally operate extended twin-engine flights over remote oceanic regions; the DXB\u2013SYD route crosses vast stretches of ocean where ETOPS approval would be required for regulatory compliance, even though the aircraft has sufficient fuel capacity. Therefore, while physically capable of the distance, the A380 cannot realistically operate this route under current certification standards.\n\n*Educational tool, not flight-planning advice.*"
+  },
+  {
+    "question_id": 1,
+    "variant": "777-300",
+    "origin": "LHR",
+    "dest": "HKG",
+    "feasible": true,
+    "strategy": "zero_shot",
+    "provider": "openai",
+    "response": "The Boeing 777-300 has a range of approximately 11,135 km, which exceeds the great-circle distance of about 9,650 km from London Heathrow (LHR) to Hong Kong (HKG). Additionally, its ETOPS capability allows it to operate efficiently over long distances, including over water. Given these specifications, the 777-300 can realistically complete this route without any issues. \n\nThis is an educational tool, not flight-planning advice."
+  },
+  {
+    "question_id": 1,
+    "variant": "777-300",
+    "origin": "LHR",
+    "dest": "HKG",
+    "feasible": true,
+    "strategy": "zero_shot",
+    "provider": "anthropic",
+    "response": "**Verdict: Yes, feasible.**\n\nThe Boeing 777-300 has a maximum range of ~11,135 km, which comfortably exceeds the 9,650 km great-circle distance from London Heathrow (LHR) to Hong Kong (HKG)\u2014providing a safety margin of ~1,485 km for headwinds, routing deviations, and required fuel reserves. The 777-300's ETOPS certification (Extended Twin Operations) enables it to fly long overwater routes, which this journey requires crossing the Middle East and Indian Ocean. With modern engines and optimal cruise planning, airlines routinely operate this route commercially.\n\nThe 0.85 feasibility score reflects real-world variables like weather routing, payload, and reserve requirements that can occasionally reduce available range.\n\n*This is an educational explanation only\u2014not flight-planning or operational advice.*"
+  },
+  {
+    "question_id": 1,
+    "variant": "777-300",
+    "origin": "LHR",
+    "dest": "HKG",
+    "feasible": true,
+    "strategy": "rag",
+    "provider": "openai",
+    "response": "The Boeing 777-300 has a range of approximately 11,135 km, which is well above the great-circle distance of 9,650 km from London Heathrow (LHR) to Hong Kong (HKG). Additionally, it is ETOPS-capable, allowing it to operate on routes that may require extended over-water flying. Given these specifications, the 777-300 can realistically fly this route without any issues. \n\nThis is an educational tool, not flight-planning advice."
+  },
+  {
+    "question_id": 1,
+    "variant": "777-300",
+    "origin": "LHR",
+    "dest": "HKG",
+    "feasible": true,
+    "strategy": "rag",
+    "provider": "anthropic",
+    "response": "**Verdict: Yes, feasible.**\n\nThe Boeing 777-300 with ~11,135 km range can comfortably cover the 9,650 km great-circle distance LHR\u2013HKG, leaving approximately 1,485 km of fuel reserve for headwinds, routing, and contingencies. The aircraft's ETOPS certification enables safe twin-engine operation over oceanic routes (crossing the Arctic or via Southeast Asia). While the provided background focuses on freighter conversions (IAI 777-300ERSF at 8,300 km, KMC 777-300ERCF at 10,000 km, and Mammoth variants), these represent payload-constrained configurations; passenger 777-300 variants maintain superior range-to-weight ratios. The 0.85 probability reflects realistic operational margins and typical dispatch factors.\n\n**Disclaimer:** This is an educational analysis tool only and should not be used for actual flight planning\u2014consult operators, flight dispatch, and regulatory authorities for real-world route feasibility."
+  },
+  {
+    "question_id": 1,
+    "variant": "777-300",
+    "origin": "LHR",
+    "dest": "HKG",
+    "feasible": true,
+    "strategy": "rag_fewshot",
+    "provider": "openai",
+    "response": "Yes, a Boeing 777-300 can realistically fly the route from London Heathrow (LHR) to Hong Kong (HKG), which has a great-circle distance of approximately 9650 km. The 777-300 has a range of about 11,135 km and is ETOPS-capable, allowing it to operate on long-haul routes over water with appropriate diversion planning. This range comfortably exceeds the distance required for this route, making it feasible without the need for refueling. (Educational tool, not flight-planning advice.)"
+  },
+  {
+    "question_id": 1,
+    "variant": "777-300",
+    "origin": "LHR",
+    "dest": "HKG",
+    "feasible": true,
+    "strategy": "rag_fewshot",
+    "provider": "anthropic",
+    "response": "Yes. The Boeing 777-300 has a published range of approximately 11,135 km, which exceeds the ~9,650 km great-circle distance from London Heathrow to Hong Kong, and the aircraft is ETOPS-capable for extended overwater operations. With typical fuel reserves and cruise planning, this route falls well within the aircraft's capabilities. (Educational tool, not flight-planning advice.)"
+  },
+  {
+    "question_id": 2,
+    "variant": "A330-300",
+    "origin": "FRA",
+    "dest": "JFK",
+    "feasible": true,
+    "strategy": "zero_shot",
+    "provider": "openai",
+    "response": "The Airbus A330-300 has a range of approximately 11,750 km, which is well above the great-circle distance of about 6,200 km from Frankfurt (FRA) to New York (JFK). Additionally, its ETOPS capability allows it to operate on long overwater routes, making it suitable for transatlantic flights. Therefore, the A330-300 can realistically fly this route without any issues. \n\nThis is an educational tool, not flight-planning advice."
+  },
+  {
+    "question_id": 2,
+    "variant": "A330-300",
+    "origin": "FRA",
+    "dest": "JFK",
+    "feasible": true,
+    "strategy": "zero_shot",
+    "provider": "anthropic",
+    "response": "# A330-300: FRA \u2192 JFK Assessment\n\n**Yes, this route is realistic for the A330-300.** The great-circle distance of ~6,200 km is well within the aircraft's maximum range of 11,750 km, leaving a comfortable fuel margin of ~5,550 km for reserves, headwinds, and contingencies. The A330-300 is ETOPS-certified (Extended Twin Operations), which is essential for transatlantic flights and allows it to fly far from alternate airports. This is a standard, frequently-operated transatlantic route for this aircraft type, operated by multiple airlines daily.\n\n*Disclaimer: This is an educational explanation only and should not be used for actual flight planning\u2014consult operational flight planners and airline dispatch for real-world feasibility.*"
+  },
+  {
+    "question_id": 2,
+    "variant": "A330-300",
+    "origin": "FRA",
+    "dest": "JFK",
+    "feasible": true,
+    "strategy": "rag",
+    "provider": "openai",
+    "response": "The Airbus A330-300 has a range of approximately 11,750 km, which is more than sufficient to cover the great-circle distance of about 6,200 km from Frankfurt (FRA) to New York (JFK). Additionally, the A330-300 is ETOPS-capable, allowing it to operate on long-haul routes over water with appropriate diversion planning. Given these specifications, the A330-300 can realistically fly the FRA to JFK route without any issues. \n\nThis is an educational tool, not flight-planning advice."
+  },
+  {
+    "question_id": 2,
+    "variant": "A330-300",
+    "origin": "FRA",
+    "dest": "JFK",
+    "feasible": true,
+    "strategy": "rag",
+    "provider": "anthropic",
+    "response": "**Yes, the A330-300 can realistically fly FRA \u2192 JFK.** The great-circle distance of 6,200 km is well within the aircraft's 11,750 km range, leaving substantial fuel reserves for climb, descent, and contingencies. Additionally, the A330-300 holds ETOPS-240 approval (achieved in November 2009 per the source), making it fully certified for extended twin-engine operations over the North Atlantic, and the global fleet's 99.0% operational reliability demonstrates its proven transatlantic capability. This route is routinely flown by A330-300s worldwide.\n\n*This is an educational explanation only and should not be used for actual flight planning or operational decisions.*"
+  },
+  {
+    "question_id": 2,
+    "variant": "A330-300",
+    "origin": "FRA",
+    "dest": "JFK",
+    "feasible": true,
+    "strategy": "rag_fewshot",
+    "provider": "openai",
+    "response": "Yes, the Airbus A330-300 can realistically fly the route from Frankfurt (FRA) to New York (JFK), which has a great-circle distance of approximately 6200 km. With a range of about 11,750 km, the A330-300 comfortably exceeds the required distance, allowing for sufficient fuel reserves and compliance with ETOPS regulations for over-ocean flights. This aircraft is well-suited for transatlantic operations, making the route feasible. (Educational tool, not flight-planning advice.)"
+  },
+  {
+    "question_id": 2,
+    "variant": "A330-300",
+    "origin": "FRA",
+    "dest": "JFK",
+    "feasible": true,
+    "strategy": "rag_fewshot",
+    "provider": "anthropic",
+    "response": "Yes. The A330-300 has a published range of 11,750 km, which comfortably exceeds the ~6,200 km great-circle distance from Frankfurt to New York. Additionally, the aircraft holds ETOPS\u2013240 approval (achieved in November 2009), allowing safe twin-engine operation far from diversion airports on transatlantic routes. With typical passenger loads, this is a standard routing for the A330 fleet. (Educational tool, not flight-planning advice.)"
+  },
+  {
+    "question_id": 3,
+    "variant": "747-400",
+    "origin": "NRT",
+    "dest": "LAX",
+    "feasible": true,
+    "strategy": "zero_shot",
+    "provider": "openai",
+    "response": "The Boeing 747-400 has a range of approximately 13,450 km, which is more than sufficient for the great-circle distance of about 8,800 km from Narita International Airport (NRT) to Los Angeles International Airport (LAX). However, it is important to note that the 747-400 is not ETOPS-capable, which could limit its operational flexibility over oceanic routes. Despite this limitation, the route is feasible given the aircraft's range and typical operational parameters. \n\nThis is an educational tool, not flight-planning advice."
+  },
+  {
+    "question_id": 3,
+    "variant": "747-400",
+    "origin": "NRT",
+    "dest": "LAX",
+    "feasible": true,
+    "strategy": "zero_shot",
+    "provider": "anthropic",
+    "response": "**Yes, the 747-400 can realistically fly NRT\u2192LAX.** The great-circle distance of ~8,800 km is well within the aircraft's maximum range of 13,450 km, leaving a comfortable fuel margin of ~4,650 km for headwinds, reserves, and routing variations. While the 747-400 lacks ETOPS certification, this specific route over the North Pacific remains viable because it follows established oceanic tracks with adequate diversion airports available along the way (e.g., Anchorage). The 0.95 feasibility probability aligns with the aircraft's proven operational history on this exact route.\n\n**Disclaimer:** This is an educational tool only and should not be used for actual flight planning\u2014consult current performance data, weather, and dispatch procedures with your airline's operations team."
+  },
+  {
+    "question_id": 3,
+    "variant": "747-400",
+    "origin": "NRT",
+    "dest": "LAX",
+    "feasible": true,
+    "strategy": "rag",
+    "provider": "openai",
+    "response": "The Boeing 747-400 has a maximum range of approximately 13,450 km, which is more than sufficient to cover the great-circle distance of approximately 8,800 km from Narita International Airport (NRT) to Los Angeles International Airport (LAX). However, it is important to note that the 747-400 is not ETOPS-capable, which may limit its operational flexibility on certain routes, particularly over water. Given the range and the route distance, the 747-400 could realistically fly this route without issues. \n\nThis is an educational tool, not flight-planning advice."
+  },
+  {
+    "question_id": 3,
+    "variant": "747-400",
+    "origin": "NRT",
+    "dest": "LAX",
+    "feasible": true,
+    "strategy": "rag",
+    "provider": "anthropic",
+    "response": "Yes, the 747-400 can realistically fly the NRT \u2192 LAX route. The great-circle distance of approximately 8,800 km is well within the aircraft's typical range of 13,450 km (7,285 nautical miles), leaving a comfortable fuel margin for headwinds, routing deviations, and reserves. This is a well-established transpacific route that 747-400s have operated routinely since the aircraft's introduction in 1989, particularly on Japanese and North American carriers. While the 747-400 lacks ETOPS certification, this is not required for Pacific overwater flights on established airways with adequate diversion airports available.\n\n*This explanation is educational only and not intended as flight-planning or operational guidance.*"
+  },
+  {
+    "question_id": 3,
+    "variant": "747-400",
+    "origin": "NRT",
+    "dest": "LAX",
+    "feasible": true,
+    "strategy": "rag_fewshot",
+    "provider": "openai",
+    "response": "Yes, a Boeing 747-400 can realistically fly the route from Narita (NRT) to Los Angeles (LAX), which has a great-circle distance of approximately 8800 km. The 747-400 has a range of about 13450 km, allowing it to comfortably cover this distance without the need for refueling. However, it is important to note that the 747-400 is not ETOPS-certified, which may limit its operational flexibility on certain routes. (Educational tool, not flight-planning advice.)"
+  },
+  {
+    "question_id": 3,
+    "variant": "747-400",
+    "origin": "NRT",
+    "dest": "LAX",
+    "feasible": true,
+    "strategy": "rag_fewshot",
+    "provider": "anthropic",
+    "response": "Yes. The Boeing 747-400 has a maximum range of approximately 13,450 km (per Boeing specifications), which exceeds the great-circle distance of 8,800 km from Narita (NRT) to Los Angeles (LAX) by a comfortable margin. This transpacific route is well within the aircraft's capabilities, with sufficient reserve fuel for typical headwinds, air traffic control routing, and standard operating margins. While the 747-400 is not ETOPS-certified, the Pacific crossing remains feasible as the route benefits from multiple alternate airports and established airline procedures for this frequently-flown corridor.\n\n*Educational tool, not flight-planning advice.*"
+  },
+  {
+    "question_id": 4,
+    "variant": "Cessna 172",
+    "origin": "ZRH",
+    "dest": "BSL",
+    "feasible": true,
+    "strategy": "zero_shot",
+    "provider": "openai",
+    "response": "The Cessna 172 has a range of approximately 1185 km, which is significantly greater than the great-circle distance of about 85 km from Zurich (ZRH) to Basel (BSL). This means the aircraft can easily cover the distance without exceeding its range. However, it is important to note that the Cessna 172 is not ETOPS-capable, which is not a concern for this short route as it remains well within the operational limits. \n\nThis is an educational tool, not flight-planning advice."
+  },
+  {
+    "question_id": 4,
+    "variant": "Cessna 172",
+    "origin": "ZRH",
+    "dest": "BSL",
+    "feasible": true,
+    "strategy": "zero_shot",
+    "provider": "anthropic",
+    "response": "**Yes, the Cessna 172 can easily fly the ZRH (Zurich) to BSL (Basel) route.**\n\nThe great-circle distance of 85 km is negligible compared to the aircraft's maximum range of ~1,185 km\u2014only about 7% of available range. The Cessna 172 is a reliable single-engine piston aircraft commonly used for short regional flights and training, making this 85 km hop well within its operational envelope. No special capabilities (like ETOPS) are needed for such a short distance over populated European terrain with multiple diversion airports nearby.\n\n**Disclaimer: This is an educational tool for understanding aircraft capabilities, not actual flight-planning advice\u2014always consult current performance data, weather, and official flight planning resources.**"
+  },
+  {
+    "question_id": 4,
+    "variant": "Cessna 172",
+    "origin": "ZRH",
+    "dest": "BSL",
+    "feasible": true,
+    "strategy": "rag",
+    "provider": "openai",
+    "response": "The Cessna 172 has a range of approximately 1,185 km, which is more than sufficient to cover the great-circle distance of approximately 85 km from Zurich (ZRH) to Basel (BSL). Given that the route is well within the aircraft's operational range, it is feasible for the Cessna 172 to complete this flight without any issues. Additionally, the aircraft does not require ETOPS certification for such a short flight. \n\nThis is an educational tool, not flight-planning advice."
+  },
+  {
+    "question_id": 4,
+    "variant": "Cessna 172",
+    "origin": "ZRH",
+    "dest": "BSL",
+    "feasible": true,
+    "strategy": "rag",
+    "provider": "anthropic",
+    "response": "# Route Feasibility Assessment\n\n**Yes, the Cessna 172 can realistically fly the ZRH\u2192BSL route.** The great-circle distance of 85 km is negligible compared to the aircraft's ~1,185 km range, requiring only ~7% of available fuel. This is a short, overland flight between two Swiss airports with ample safety margins and no ETOPS requirements. Both airports are well-equipped with standard facilities for general aviation operations.\n\n**Disclaimer:** This is an educational tool only and should not be used for actual flight planning\u2014consult current NOTAMs, weather, performance data, and regulatory requirements with qualified aviation professionals."
+  },
+  {
+    "question_id": 4,
+    "variant": "Cessna 172",
+    "origin": "ZRH",
+    "dest": "BSL",
+    "feasible": true,
+    "strategy": "rag_fewshot",
+    "provider": "openai",
+    "response": "Q: Could a Cessna 172 fly Z\u00fcrich \u2192 Basel (\u224885 km)?\n\nA: Yes, the Cessna 172 can easily fly the 85 km route from Z\u00fcrich to Basel. With a range of approximately 1185 km, it has more than enough capability to cover this distance without any need for refueling. Additionally, the flight would be well within the operational limits of the aircraft. (Educational tool, not flight-planning advice.)"
+  },
+  {
+    "question_id": 4,
+    "variant": "Cessna 172",
+    "origin": "ZRH",
+    "dest": "BSL",
+    "feasible": true,
+    "strategy": "rag_fewshot",
+    "provider": "anthropic",
+    "response": "Yes. The Cessna 172 has a range of approximately 1,185 km, which far exceeds the ~85 km distance between Z\u00fcrich and Basel \u2014 a short hop well within safe operating limits with substantial reserves. This is a routine regional flight for the aircraft, with no range, fuel, or diversion concerns. (Educational tool, not flight-planning advice.)"
+  },
+  {
+    "question_id": 5,
+    "variant": "Cessna 172",
+    "origin": "ZRH",
+    "dest": "JFK",
+    "feasible": false,
+    "strategy": "zero_shot",
+    "provider": "openai",
+    "response": "The Cessna 172 has a maximum range of approximately 1,185 kilometers, which is significantly less than the great-circle distance of about 6,309 kilometers from Zurich (ZRH) to New York (JFK). Additionally, the Cessna 172 is not ETOPS-capable, meaning it is not designed for extended operations over water or remote areas. Therefore, it is not feasible for this aircraft to complete the route. \n\nThis is an educational tool, not flight-planning advice."
+  },
+  {
+    "question_id": 5,
+    "variant": "Cessna 172",
+    "origin": "ZRH",
+    "dest": "JFK",
+    "feasible": false,
+    "strategy": "zero_shot",
+    "provider": "anthropic",
+    "response": "# Cessna 172 \u2192 ZRH-JFK Route Analysis\n\n**No, this route is not feasible.** The Cessna 172 has a maximum range of approximately 1,185 km, while the great-circle distance from Zurich to New York is 6,309 km\u2014over **5.3 times** the aircraft's capability. Additionally, the Cessna 172 is not ETOPS-certified, meaning it cannot legally operate extended overwater flights required for transatlantic crossings. Even with favorable winds, fuel reserves, and realistic cruise speeds, this single-engine piston aircraft simply lacks the range, endurance, and regulatory authorization for this route.\n\n*This analysis is educational only and should not be used for actual flight planning.*"
+  },
+  {
+    "question_id": 5,
+    "variant": "Cessna 172",
+    "origin": "ZRH",
+    "dest": "JFK",
+    "feasible": false,
+    "strategy": "rag",
+    "provider": "openai",
+    "response": "The Cessna 172 has a maximum range of approximately 1,185 km, which is significantly less than the great-circle distance of about 6,309 km from Zurich (ZRH) to New York (JFK). Given that the aircraft is not ETOPS-capable, it cannot operate on such long over-water routes without suitable diversion airports. Therefore, it is not feasible for a Cessna 172 to complete this journey. \n\nThis is an educational tool, not flight-planning advice."
+  },
+  {
+    "question_id": 5,
+    "variant": "Cessna 172",
+    "origin": "ZRH",
+    "dest": "JFK",
+    "feasible": false,
+    "strategy": "rag",
+    "provider": "anthropic",
+    "response": "**Verdict: Not feasible.**\n\nThe Cessna 172 has a maximum range of approximately 1,185 km, which falls far short of the 6,309 km great-circle distance required for a Zurich-to-New York flight. Even the fuel-efficient JT-A diesel variant, with its enhanced 1,639 km range, would cover only about 26% of the required distance. Additionally, the Cessna 172 is not ETOPS-capable, meaning it lacks the redundancy and certification standards required for extended overwater operations\u2014a critical requirement for any transatlantic crossing. The aircraft would require multiple fuel stops across the Atlantic, which is operationally impractical and exceeds its design capability for such a mission.\n\n*Disclaimer: This is an educational tool only and should not be used for actual flight planning or operational decisions.*"
+  },
+  {
+    "question_id": 5,
+    "variant": "Cessna 172",
+    "origin": "ZRH",
+    "dest": "JFK",
+    "feasible": false,
+    "strategy": "rag_fewshot",
+    "provider": "openai",
+    "response": "Q: Could a Cessna 172 fly Z\u00fcrich \u2192 New York (\u22486309 km)?\n\nA: No, the Cessna 172 has a maximum range of approximately 1185 km, which is significantly less than the required distance of about 6309 km for a transatlantic flight. Additionally, it is not ETOPS-capable, meaning it cannot operate on routes that are far from suitable diversion airports. Therefore, it cannot complete this route without extensive refueling, making it impractical. (Educational tool, not flight-planning advice.)"
+  },
+  {
+    "question_id": 5,
+    "variant": "Cessna 172",
+    "origin": "ZRH",
+    "dest": "JFK",
+    "feasible": false,
+    "strategy": "rag_fewshot",
+    "provider": "anthropic",
+    "response": "No. The Cessna 172 has a maximum range of approximately 1,185 km\u2014less than one-fifth of the 6,309 km great-circle distance from Z\u00fcrich to New York. Even the improved JT-A diesel variant, with its 1,639 km range, falls drastically short of the transatlantic crossing requirement. The aircraft lacks ETOPS certification and is designed for short regional flights, not oceanic operations.\n\n*This is an educational tool, not flight-planning advice.*"
+  },
+  {
+    "question_id": 6,
+    "variant": "ATR-72",
+    "origin": "CDG",
+    "dest": "IST",
+    "feasible": false,
+    "strategy": "zero_shot",
+    "provider": "openai",
+    "response": "The ATR-72 has a maximum range of approximately 1,528 kilometers, which is significantly shorter than the great-circle distance of about 2,250 kilometers from Charles de Gaulle Airport (CDG) to Istanbul Airport (IST). Additionally, the ATR-72 is not ETOPS-capable, meaning it cannot operate on routes that are far from suitable diversion airports, which is a concern for longer flights over water or remote areas. Therefore, this aircraft would not be able to realistically complete this route. \n\nThis is an educational tool, not flight-planning advice."
+  },
+  {
+    "question_id": 6,
+    "variant": "ATR-72",
+    "origin": "CDG",
+    "dest": "IST",
+    "feasible": false,
+    "strategy": "zero_shot",
+    "provider": "anthropic",
+    "response": "The ATR-72 **cannot realistically fly CDG (Paris) \u2192 IST (Istanbul)** on this ~2,250 km route. With a maximum range of approximately 1,528 km, the aircraft falls roughly 722 km short\u2014a 47% shortfall that accounts for no reserves, headwinds, or contingencies. Additionally, the ATR-72 lacks ETOPS certification, which is important for over-water segments, and this route crosses significant water bodies (English Channel, Mediterranean). The aircraft would need multiple fuel stops (likely via intermediate airports like Munich or Vienna) to complete this journey, making it operationally impractical for direct service.\n\n*This explanation is educational and does not constitute flight-planning or operational advice.*"
+  },
+  {
+    "question_id": 6,
+    "variant": "ATR-72",
+    "origin": "CDG",
+    "dest": "IST",
+    "feasible": false,
+    "strategy": "rag",
+    "provider": "openai",
+    "response": "The ATR-72 has a maximum range of approximately 1,528 km, which is significantly less than the great-circle distance of about 2,250 km from Charles de Gaulle Airport (CDG) to Istanbul Airport (IST). Additionally, the ATR-72 is not ETOPS-capable, meaning it cannot operate on routes that are far from suitable emergency landing airports, which is a concern for longer flights over water or remote areas. Therefore, it is not feasible for the ATR-72 to fly this route.\n\nThis response is for educational purposes only and should not be considered flight-planning advice."
+  },
+  {
+    "question_id": 6,
+    "variant": "ATR-72",
+    "origin": "CDG",
+    "dest": "IST",
+    "feasible": false,
+    "strategy": "rag",
+    "provider": "anthropic",
+    "response": "**Verdict: Not feasible.**\n\nThe ATR-72's maximum range of approximately 1,528 km falls significantly short of the 2,250 km great-circle distance required for CDG (Paris) to IST (Istanbul). According to the specifications provided, the aircraft would need to cover 722 km beyond its maximum range, even before accounting for headwinds, reserve fuel requirements, or routing around airspace restrictions. Additionally, as a short-haul regional turboprop without ETOPS certification, the ATR-72 is not equipped for extended overwater operations that this route would entail. The numeric model probability of 0.08 (8% feasibility) reflects these critical performance limitations.\n\n**Disclaimer:** This is an educational tool only and should not be used for actual flight planning."
+  },
+  {
+    "question_id": 6,
+    "variant": "ATR-72",
+    "origin": "CDG",
+    "dest": "IST",
+    "feasible": false,
+    "strategy": "rag_fewshot",
+    "provider": "openai",
+    "response": "No, the ATR-72 cannot realistically fly the route from Charles de Gaulle Airport (CDG) to Istanbul Airport (IST), which has a great-circle distance of approximately 2250 km. The ATR-72 has a maximum range of about 1528 km, which is significantly less than the required distance for this route. Additionally, it is not ETOPS-capable, meaning it cannot operate over long stretches of water or remote areas without suitable diversion airports. (Educational tool, not flight-planning advice.)"
+  },
+  {
+    "question_id": 6,
+    "variant": "ATR-72",
+    "origin": "CDG",
+    "dest": "IST",
+    "feasible": false,
+    "strategy": "rag_fewshot",
+    "provider": "anthropic",
+    "response": "No. The ATR 72 has a maximum range of approximately 1,528 km, but the Paris CDG \u2192 Istanbul route spans roughly 2,250 km \u2014 exceeding the aircraft's range by over 700 km. Additionally, the ATR 72 is not ETOPS-certified, making it unsuitable for extended overwater operations that this route would require. The aircraft is designed for short-haul regional flights, not transcontinental journeys.\n\n*Disclaimer: This is an educational tool, not flight-planning advice.*"
+  },
+  {
+    "question_id": 7,
+    "variant": "CRJ-200",
+    "origin": "LHR",
+    "dest": "DXB",
+    "feasible": false,
+    "strategy": "zero_shot",
+    "provider": "openai",
+    "response": "The Bombardier CRJ-200 has a maximum range of approximately 3,148 km, which is significantly less than the great-circle distance of about 5,500 km from London Heathrow (LHR) to Dubai International (DXB). Additionally, the CRJ-200 is not ETOPS-capable, meaning it is not designed for extended operations over water or remote areas, which would be necessary for such a long route. Therefore, it is not feasible for this aircraft to operate this route. \n\nThis is an educational tool, not flight-planning advice."
+  },
+  {
+    "question_id": 7,
+    "variant": "CRJ-200",
+    "origin": "LHR",
+    "dest": "DXB",
+    "feasible": false,
+    "strategy": "zero_shot",
+    "provider": "anthropic",
+    "response": "# CRJ-200: LHR \u2192 DXB Feasibility\n\n**No, this route is not feasible for the CRJ-200.** The great-circle distance of ~5,500 km far exceeds the aircraft's maximum range of ~3,148 km\u2014a shortfall of approximately 2,350 km. Additionally, the CRJ-200 lacks ETOPS certification, which means it cannot fly extended routes over water or remote areas (required over the Mediterranean, North Africa, and the Middle East on this routing). Even with optimal tailwinds and light loading, the range deficit is insurmountable for this regional jet.\n\n**Disclaimer:** This is an educational explanation only, not actual flight-planning or operational advice."
+  },
+  {
+    "question_id": 7,
+    "variant": "CRJ-200",
+    "origin": "LHR",
+    "dest": "DXB",
+    "feasible": false,
+    "strategy": "rag",
+    "provider": "openai",
+    "response": "The Bombardier CRJ-200 has a maximum range of approximately 3,148 km, which is significantly less than the great-circle distance of approximately 5,500 km from London Heathrow (LHR) to Dubai International (DXB). Additionally, the CRJ-200 is not ETOPS-capable, meaning it cannot operate on routes that are far from suitable emergency landing airports, which would be necessary for such a long overwater flight. Therefore, it is not feasible for the CRJ-200 to fly this route.\n\nThis is an educational tool, not flight-planning advice."
+  },
+  {
+    "question_id": 7,
+    "variant": "CRJ-200",
+    "origin": "LHR",
+    "dest": "DXB",
+    "feasible": false,
+    "strategy": "rag",
+    "provider": "anthropic",
+    "response": "The CRJ-200 cannot realistically fly the LHR\u2013DXB route. With a maximum range of approximately 3,148 km, the aircraft falls significantly short of the 5,500 km great-circle distance required, leaving a 2,352 km shortfall even without accounting for reserves, headwinds, or routing adjustments. Additionally, the CRJ-200 lacks ETOPS certification, which is mandatory for overwater operations across the Middle East routing, making this route operationally and legally infeasible.\n\n*This is an educational tool only, not flight-planning advice.*"
+  },
+  {
+    "question_id": 7,
+    "variant": "CRJ-200",
+    "origin": "LHR",
+    "dest": "DXB",
+    "feasible": false,
+    "strategy": "rag_fewshot",
+    "provider": "openai",
+    "response": "No, the Bombardier CRJ-200 cannot realistically fly the route from London Heathrow (LHR) to Dubai (DXB), which has a great-circle distance of approximately 5500 km. The CRJ-200 has a maximum range of about 3148 km, which is significantly less than the required distance for this route. Additionally, the CRJ-200 is not ETOPS-capable, meaning it cannot operate on routes that require extended overwater flight without suitable diversion airports. (Educational tool, not flight-planning advice.)"
+  },
+  {
+    "question_id": 7,
+    "variant": "CRJ-200",
+    "origin": "LHR",
+    "dest": "DXB",
+    "feasible": false,
+    "strategy": "rag_fewshot",
+    "provider": "anthropic",
+    "response": "No. The CRJ-200 has a maximum range of approximately 3,148 km, which falls significantly short of the ~5,500 km great-circle distance between London Heathrow and Dubai. Additionally, the CRJ-200 is not ETOPS-certified, meaning it cannot be approved for extended oceanic operations\u2014a critical requirement for the route over the Mediterranean and Middle East. Multiple fuel stops would be necessary, making this impractical for scheduled service.\n\n*This is an educational tool, not flight-planning advice.*"
+  },
+  {
+    "question_id": 8,
+    "variant": "DHC-6",
+    "origin": "ZRH",
+    "dest": "ATH",
+    "feasible": false,
+    "strategy": "zero_shot",
+    "provider": "openai",
+    "response": "The DHC-6 has a maximum range of approximately 1480 km, which is insufficient for the great-circle distance of about 1600 km from Zurich (ZRH) to Athens (ATH). Additionally, the aircraft is not ETOPS-capable, meaning it cannot operate on routes that exceed its single-engine performance capabilities over extended distances. Therefore, this aircraft would not realistically be able to complete this route. \n\nThis is an educational tool, not flight-planning advice."
+  },
+  {
+    "question_id": 8,
+    "variant": "DHC-6",
+    "origin": "ZRH",
+    "dest": "ATH",
+    "feasible": false,
+    "strategy": "zero_shot",
+    "provider": "anthropic",
+    "response": "# Route Feasibility Analysis: DHC-6 ZRH \u2192 ATH\n\nThe DHC-6 Twin Otter cannot reliably fly this route. With a maximum range of ~1,480 km and a great-circle distance of ~1,600 km, the aircraft falls **120 km short** even under ideal conditions (no headwind, optimal weight/altitude). More critically, the DHC-6 is not ETOPS-certified, meaning it cannot operate over extended water or remote terrain for extended periods\u2014and the Zurich-to-Athens route crosses the Mediterranean Sea for significant stretches. Realistic flight planning requires reserves for headwinds, altitude restrictions, and contingencies, making this route infeasible with this aircraft.\n\n**Disclaimer:** This is an educational tool only, not flight-planning advice; always consult official aircraft manuals, operators, and aviation authorities for real operations."
+  },
+  {
+    "question_id": 8,
+    "variant": "DHC-6",
+    "origin": "ZRH",
+    "dest": "ATH",
+    "feasible": false,
+    "strategy": "rag",
+    "provider": "openai",
+    "response": "The DHC-6 (De Havilland Canada) has a maximum range of approximately 1480 km, while the great-circle distance from Zurich (ZRH) to Athens (ATH) is about 1600 km. Given that the aircraft's range is less than the required distance, it would not be able to complete this route without refueling. Additionally, the DHC-6 is not ETOPS-capable, which further limits its operational flexibility for such a route. Therefore, it is not feasible for the DHC-6 to fly from ZRH to ATH.\n\nThis is an educational tool, not flight-planning advice."
+  },
+  {
+    "question_id": 8,
+    "variant": "DHC-6",
+    "origin": "ZRH",
+    "dest": "ATH",
+    "feasible": false,
+    "strategy": "rag",
+    "provider": "anthropic",
+    "response": "**No, the DHC-6 cannot realistically fly ZRH \u2192 ATH.** The route requires 1,600 km of distance, but the DHC-6 has a maximum range of only 1,480 km\u2014a 120 km shortfall with no reserves for headwinds, weather diversion, or mandatory fuel reserves. Additionally, the DHC-6 lacks ETOPS certification, which is essential for over-water segments of this route across the Mediterranean. The 0.15 probability verdict reflects this fundamental capability gap.\n\n*This is an educational tool only, not flight-planning advice.*"
+  },
+  {
+    "question_id": 8,
+    "variant": "DHC-6",
+    "origin": "ZRH",
+    "dest": "ATH",
+    "feasible": false,
+    "strategy": "rag_fewshot",
+    "provider": "openai",
+    "response": "The DHC-6 (De Havilland Canada) has a range of approximately 1480 km, which is insufficient for the Z\u00fcrich to Athens route, with a great-circle distance of about 1600 km. Since the aircraft is not ETOPS-capable, it cannot operate over long stretches of water or remote areas without suitable diversion airports. Therefore, it would not be feasible for the DHC-6 to complete this route without significant refueling stops. (Educational tool, not flight-planning advice.)"
+  },
+  {
+    "question_id": 8,
+    "variant": "DHC-6",
+    "origin": "ZRH",
+    "dest": "ATH",
+    "feasible": false,
+    "strategy": "rag_fewshot",
+    "provider": "anthropic",
+    "response": "No. The DHC-6 (De Havilland Canada Dash 8) has a maximum range of approximately 1480 km, which falls short of the 1600 km great-circle distance between Z\u00fcrich and Athens. Additionally, the aircraft is not ETOPS-certified, meaning it cannot be approved for extended overwater operations that would be required over the Mediterranean. A refueling stop would be necessary to complete this route safely. (Educational tool, not flight-planning advice.)"
+  },
+  {
+    "question_id": 9,
+    "variant": "DH-82",
+    "origin": "LHR",
+    "dest": "CDG",
+    "feasible": true,
+    "strategy": "zero_shot",
+    "provider": "openai",
+    "response": "The De Havilland DH-82 has a range of approximately 486 km, which exceeds the great-circle distance of about 340 km from London Heathrow (LHR) to Charles de Gaulle (CDG). However, it is not ETOPS-capable, meaning it is not designed for extended operations over water or remote areas, which could be a concern depending on the specific flight path. Given the range and the distance, the DH-82 could realistically complete the flight, but operational considerations may limit its use on this route. \n\nThis is an educational tool, not flight-planning advice."
+  },
+  {
+    "question_id": 9,
+    "variant": "DH-82",
+    "origin": "LHR",
+    "dest": "CDG",
+    "feasible": true,
+    "strategy": "zero_shot",
+    "provider": "anthropic",
+    "response": "The DH-82 Tiger Moth could theoretically cover the 340 km LHR\u2013CDG distance, as it exceeds the great-circle range of ~486 km. However, this route crosses the English Channel and is over open water, and the Tiger Moth lacks ETOPS certification, modern navigation aids, and pressurization\u2014making it unsuitable for commercial cross-Channel operations. The 0.72 feasibility score likely reflects technical range sufficiency but overlooks regulatory and safety barriers that would prevent this in practice. This assessment is educational only and should not inform actual flight planning."
+  },
+  {
+    "question_id": 9,
+    "variant": "DH-82",
+    "origin": "LHR",
+    "dest": "CDG",
+    "feasible": true,
+    "strategy": "rag",
+    "provider": "openai",
+    "response": "The De Havilland DH-82 has a range of approximately 486 km, which exceeds the great-circle distance of 340 km from London Heathrow (LHR) to Paris Charles de Gaulle (CDG). Since the aircraft's range is sufficient for this route, it could realistically complete the flight. However, it is not ETOPS-capable, which may limit its operational flexibility in certain conditions. Overall, the DH-82 is feasible for this route based on its range specifications.\n\nThis is an educational tool, not flight-planning advice."
+  },
+  {
+    "question_id": 9,
+    "variant": "DH-82",
+    "origin": "LHR",
+    "dest": "CDG",
+    "feasible": true,
+    "strategy": "rag",
+    "provider": "anthropic",
+    "response": "I need to clarify a significant mismatch: the provided background sources describe the **MD-80/82/83 series** (jet airliners) and **DHC-8 Dash 8** (turboprops), but **not** the **De Havilland DH-82 Tiger Moth**, a 1930s-era biplane trainer with a ~486 km range.\n\nThe DH-82 Tiger Moth could theoretically cover the 340 km LHR-CDG distance within its range; however, it lacks the altitude capability (max ~4,000 m), speed (max ~180 km/h), and weather systems for a practical over-water crossing of the English Channel in modern airspace. The route would require low-level flight in uncontrolled airspace and heavy headwinds could consume reserves dangerously.\n\n**Disclaimer: This is an educational analysis tool only and should never be used for actual flight planning.**"
+  },
+  {
+    "question_id": 9,
+    "variant": "DH-82",
+    "origin": "LHR",
+    "dest": "CDG",
+    "feasible": true,
+    "strategy": "rag_fewshot",
+    "provider": "openai",
+    "response": "The De Havilland DH-82 (Tiger Moth) cannot realistically fly the route from London Heathrow (LHR) to Charles de Gaulle (CDG) as it has a range of approximately 486 km, while the great-circle distance is about 340 km. Although the distance is within its range, the DH-82 is not ETOPS-capable, which limits its operational flexibility for commercial flights. Therefore, while it could technically cover the distance, it is not suitable for this route in a practical sense. (Educational tool, not flight-planning advice.)"
+  },
+  {
+    "question_id": 9,
+    "variant": "DH-82",
+    "origin": "LHR",
+    "dest": "CDG",
+    "feasible": true,
+    "strategy": "rag_fewshot",
+    "provider": "anthropic",
+    "response": "I cannot answer this question as presented. You've specified a **DH-82 (De Havilland)** with a range of ~486 km, but the background material provided discusses only the **DHC-8 (De Havilland Canada Dash 8)** and the **MD-80/82/83** series\u2014neither of which matches the DH-82 specification.\n\nThe DH-82 Tiger Moth is a 1930s biplane trainer with ~480 km range; if that's the intended aircraft, then **yes, it could theoretically cover the ~340 km LHR\u2013CDG distance**, but it would have minimal reserves and is neither equipped nor certified for cross-Channel operations over water.\n\nPlease clarify which aircraft you mean (DH-82 Tiger Moth vs. DHC-8 Dash series), and I'll provide an accurate assessment. (Educational tool, not flight-planning advice.)"
+  },
+  {
+    "question_id": 10,
+    "variant": "A320",
+    "origin": "ZRH",
+    "dest": "JFK",
+    "feasible": false,
+    "strategy": "zero_shot",
+    "provider": "openai",
+    "response": "The Airbus A320 has a maximum range of approximately 6,150 km, which is slightly less than the great-circle distance of 6,309 km from Zurich (ZRH) to New York (JFK). Although the A320 is ETOPS-capable, allowing it to operate on routes that may be farther from diversion airports, the distance exceeds its maximum range. Therefore, it would not be feasible for the A320 to complete this route without refueling. \n\nThis is an educational tool, not flight-planning advice."
+  },
+  {
+    "question_id": 10,
+    "variant": "A320",
+    "origin": "ZRH",
+    "dest": "JFK",
+    "feasible": false,
+    "strategy": "zero_shot",
+    "provider": "anthropic",
+    "response": "# A320 Zurich\u2013New York Feasibility\n\nThe A320 cannot reliably operate this route. Although its maximum range of ~6,150 km is close to the 6,309 km great-circle distance, it lacks sufficient margin for headwinds, climb/descent profiles, and required fuel reserves\u2014typically 5\u201310% reserve plus alternate-airport fuel. While the A320 is ETOPS-certified, allowing twin-engine operation over oceans, it was not designed for transatlantic crossings; the slightly larger A321neo (range ~7,400 km) is the minimum Airbus narrowbody suitable for this route.\n\n*This is an educational tool only, not flight-planning advice.*"
+  },
+  {
+    "question_id": 10,
+    "variant": "A320",
+    "origin": "ZRH",
+    "dest": "JFK",
+    "feasible": false,
+    "strategy": "rag",
+    "provider": "openai",
+    "response": "The Airbus A320 has a maximum range of approximately 6,150 km, while the great-circle distance from Zurich (ZRH) to New York (JFK) is about 6,309 km. This distance exceeds the A320's range, making it unable to complete the route non-stop, even with ETOPS capabilities. Therefore, the A320 would not be feasible for this route without a stop for refueling. \n\nThis is an educational tool, not flight-planning advice."
+  },
+  {
+    "question_id": 10,
+    "variant": "A320",
+    "origin": "ZRH",
+    "dest": "JFK",
+    "feasible": false,
+    "strategy": "rag",
+    "provider": "anthropic",
+    "response": "# A320 ZRH\u2192JFK Assessment\n\n**Not feasible.** The A320's maximum range of ~6,150 km falls approximately 160 km short of the 6,309 km great-circle distance. While the A320 is ETOPS-capable (enabling transatlantic operations), actual routing and required reserves for weather/diversion exceed the aircraft's fuel capacity. The background materials note that only stretched variants like the A321 family achieve transatlantic capability\u2014specifically the A321LR (7,400 km range) and A321XLR (8,700 km range)\u2014suggesting the standard A320 is marginal for this route.\n\n*This explanation is educational only and should not be used for flight planning; consult current aircraft manuals, weather data, and aviation authorities.*"
+  },
+  {
+    "question_id": 10,
+    "variant": "A320",
+    "origin": "ZRH",
+    "dest": "JFK",
+    "feasible": false,
+    "strategy": "rag_fewshot",
+    "provider": "openai",
+    "response": "The Airbus A320 has a range of approximately 6150 km, which is insufficient for the great-circle distance of about 6309 km from Z\u00fcrich to JFK. While the A320 is ETOPS-capable, it would not be able to complete this transatlantic route without significant refueling stops, making it impractical for direct flights. Therefore, it is not feasible for this specific route. (Educational tool, not flight-planning advice.)"
+  },
+  {
+    "question_id": 10,
+    "variant": "A320",
+    "origin": "ZRH",
+    "dest": "JFK",
+    "feasible": false,
+    "strategy": "rag_fewshot",
+    "provider": "anthropic",
+    "response": "No. The standard A320 has a range of ~6,150 km, which falls short of the ~6,309 km great-circle distance ZRH\u2013JFK by roughly 160 km\u2014insufficient margin for headwinds, reserves, and operational contingencies. While the A318 variant (with 10% greater range) can operate London City\u2013JFK with a stopover at Shannon, and the A321LR/XLR variants extend range to 7,400\u20138,700 km, the baseline A320 cannot complete this transatlantic route nonstop. Refuelling stops would be required. (Educational tool, not flight-planning advice.)"
+  },
+  {
+    "question_id": 11,
+    "variant": "737-800",
+    "origin": "LHR",
+    "dest": "DXB",
+    "feasible": true,
+    "strategy": "zero_shot",
+    "provider": "openai",
+    "response": "The Boeing 737-800 has a maximum range of approximately 5,765 km, which exceeds the great-circle distance of about 5,500 km from London Heathrow (LHR) to Dubai (DXB). Additionally, its ETOPS capability allows it to operate on routes that are farther from diversion airports, which is beneficial for this long-haul flight. Therefore, the 737-800 could realistically fly this route, although operational factors such as payload and weather conditions may affect its performance. \n\nThis is an educational tool, not flight-planning advice."
+  },
+  {
+    "question_id": 11,
+    "variant": "737-800",
+    "origin": "LHR",
+    "dest": "DXB",
+    "feasible": true,
+    "strategy": "zero_shot",
+    "provider": "anthropic",
+    "response": "# 737-800 LHR\u2192DXB Route Feasibility\n\n**Yes, the 737-800 can feasibly fly this route.** The great-circle distance of ~5500 km falls within the aircraft's maximum range of ~5765 km, leaving a modest 265 km reserve. However, the low feasibility probability (0.58) reflects real-world constraints: headwinds, climb/descent segments, and required reserves for alternates and contingencies typically consume 5\u20138% of range. The 737-800's ETOPS certification is irrelevant here (LHR\u2013DXB doesn't require twin-engine overwater operations beyond 60 minutes), but it confirms the aircraft's reliability credentials.\n\nIn practice, airlines often dispatch this route with careful fuel planning and favorable winds, though it remains tight.\n\n*Disclaimer: This is an educational analysis tool\u2014not actual flight-planning advice; consult aircraft performance manuals and operational dispatch procedures for real operations.*"
+  },
+  {
+    "question_id": 11,
+    "variant": "737-800",
+    "origin": "LHR",
+    "dest": "DXB",
+    "feasible": true,
+    "strategy": "rag",
+    "provider": "openai",
+    "response": "The Boeing 737-800 has a range of approximately 5,765 km, which is sufficient to cover the great-circle distance of about 5,500 km from London Heathrow (LHR) to Dubai International (DXB). Additionally, the aircraft is ETOPS-capable, allowing it to operate on routes that may require extended over-water flying, which is relevant for this route. Given these specifications, the 737-800 could realistically fly this route, although operational factors such as payload and weather conditions would also play a role. \n\nThis is an educational tool, not flight-planning advice."
+  },
+  {
+    "question_id": 11,
+    "variant": "737-800",
+    "origin": "LHR",
+    "dest": "DXB",
+    "feasible": true,
+    "strategy": "rag",
+    "provider": "anthropic",
+    "response": "**Assessment: Not feasible with the 737-800**\n\nThe provided background references the **737 Classic** (737-300/400/500), which has a maximum range of only 3,815\u20134,398 km\u2014significantly short of the 5,500 km LHR-DXB distance. However, the aircraft specified is the **737-800**, a Next Generation variant with a 5,765 km range that exceeds the great-circle distance by ~265 km. The 737-800 is ETOPS-capable, which allows twin-engine aircraft to fly extended overwater routes, making this route theoretically possible. However, the low probability score (0.58) reflects real-world constraints: fuel reserves, headwinds, contingency planning, and payload restrictions mean the 5,765 km range leaves minimal margin for operational variability.\n\n**Disclaimer:** This is an educational analysis only and should not be used for actual flight planning\u2014consult current aircraft performance data, weather, and operator procedures."
+  },
+  {
+    "question_id": 11,
+    "variant": "737-800",
+    "origin": "LHR",
+    "dest": "DXB",
+    "feasible": true,
+    "strategy": "rag_fewshot",
+    "provider": "openai",
+    "response": "Yes, a Boeing 737-800 could realistically fly the route from London Heathrow (LHR) to Dubai (DXB), which has a great-circle distance of approximately 5500 km. The 737-800 has a range of about 5765 km, allowing it to cover the distance without the need for refueling. Additionally, it is ETOPS-capable, which is beneficial for overwater operations. (Educational tool, not flight-planning advice.)"
+  },
+  {
+    "question_id": 11,
+    "variant": "737-800",
+    "origin": "LHR",
+    "dest": "DXB",
+    "feasible": true,
+    "strategy": "rag_fewshot",
+    "provider": "anthropic",
+    "response": "**No, not realistically.** The Boeing 737-800 has a maximum range of approximately 5,765 km, and while the great-circle distance LHR\u2013DXB is ~5,500 km, this leaves virtually no safety margin for headwinds, routing constraints, or operational reserves required by aviation regulations. The 737-800 is a narrow-body aircraft optimized for shorter regional/continental routes, and airlines would require fuel reserves (typically 5\u201310% additional distance) that this aircraft cannot accommodate on this route. The provided background material concerns the 737 Classic (earlier generation with a much shorter 3,815\u20134,398 km range), which would be even less suitable.\n\n*This is an educational tool, not flight-planning advice.*"
+  },
+  {
+    "question_id": 12,
+    "variant": "757-200",
+    "origin": "KEF",
+    "dest": "JFK",
+    "feasible": true,
+    "strategy": "zero_shot",
+    "provider": "openai",
+    "response": "The Boeing 757-200 has a range of approximately 7,222 km, which is well above the great-circle distance of about 4,200 km from Keflavik (KEF) to John F. Kennedy (JFK). Additionally, its ETOPS capability allows it to operate on routes that are farther from suitable diversion airports, which is beneficial for transatlantic flights. Therefore, the 757-200 can realistically fly this route without any issues. \n\nThis is an educational tool, not flight-planning advice."
+  },
+  {
+    "question_id": 12,
+    "variant": "757-200",
+    "origin": "KEF",
+    "dest": "JFK",
+    "feasible": true,
+    "strategy": "zero_shot",
+    "provider": "anthropic",
+    "response": "**Yes, the 757-200 can realistically fly KEF (Keflav\u00edk, Iceland) to JFK (New York).**\n\nThe 757-200 has a maximum range of approximately 7,222 km, well exceeding the great-circle distance of 4,200 km on this route. With typical payload and fuel reserves, the aircraft comfortably covers this transatlantic crossing. Additionally, the 757-200's ETOPS certification permits extended operations over the ocean, meeting regulatory requirements for transoceanic flight. Headwinds and routing deviations may reduce the margin somewhat, but the aircraft's performance leaves adequate reserves.\n\n*This explanation is for educational purposes only and should not be used for actual flight planning.*"
+  },
+  {
+    "question_id": 12,
+    "variant": "757-200",
+    "origin": "KEF",
+    "dest": "JFK",
+    "feasible": true,
+    "strategy": "rag",
+    "provider": "openai",
+    "response": "The Boeing 757-200 has a maximum range of approximately 7,222 km, which is well above the great-circle distance of about 4,200 km from Keflavik (KEF) to New York (JFK). Additionally, the aircraft is ETOPS-capable, allowing it to operate on extended overwater routes, which is essential for transatlantic flights. Given these specifications, the 757-200 can realistically complete the KEF to JFK route with a comfortable margin for fuel reserves. \n\nThis is an educational tool, not flight-planning advice."
+  },
+  {
+    "question_id": 12,
+    "variant": "757-200",
+    "origin": "KEF",
+    "dest": "JFK",
+    "feasible": true,
+    "strategy": "rag",
+    "provider": "anthropic",
+    "response": "**Yes, the Boeing 757-200 can realistically fly KEF \u2192 JFK.** The aircraft's maximum range of 7,250 km (per Boeing specifications) comfortably exceeds the great-circle distance of 4,200 km, leaving adequate fuel reserves for headwinds, weather diversions, and regulatory minimums. The 757-200 received ETOPS approval in 1986 and has extensively served transatlantic routes, including United's Newark-to-Berlin route exceeding 4,000 nautical miles, confirming its operational suitability for this Reykjavik-to-New York crossing. The main operational constraint would be payload\u2014the aircraft cannot carry maximum passenger capacity on this route, a pattern already documented on comparable transatlantic services.\n\n**Disclaimer:** This is an educational tool only and not flight-planning advice; consult actual airline dispatch and regulatory requirements for real operations."
+  },
+  {
+    "question_id": 12,
+    "variant": "757-200",
+    "origin": "KEF",
+    "dest": "JFK",
+    "feasible": true,
+    "strategy": "rag_fewshot",
+    "provider": "openai",
+    "response": "Yes, a Boeing 757-200 could realistically fly the route from Keflavik (KEF) to John F. Kennedy International Airport (JFK), which is approximately 4200 km. The 757-200 has a range of about 7222 km, comfortably exceeding the distance of this transatlantic flight. Additionally, it is ETOPS-capable, allowing it to operate on routes that are over water and meet the necessary diversion requirements. (Educational tool, not flight-planning advice.)"
+  },
+  {
+    "question_id": 12,
+    "variant": "757-200",
+    "origin": "KEF",
+    "dest": "JFK",
+    "feasible": true,
+    "strategy": "rag_fewshot",
+    "provider": "anthropic",
+    "response": "Yes. The Boeing 757-200 can comfortably fly Keflav\u00edk (KEF) \u2192 New York JFK, a great-circle distance of approximately 4,200 km. The 757-200 has a published range of 3,915 nautical miles (7,250 km) and received ETOPS approval in 1986, making it well-suited for North Atlantic operations\u2014the source notes it has been \"increasingly deployed on transatlantic routes\" since the turn of the century. With a margin of over 3,000 km of range beyond the required distance, fuel reserves and headwind contingencies are easily accommodated.\n\n*This is an educational tool, not flight-planning advice.*"
+  },
+  {
+    "question_id": 13,
+    "variant": "A340-500",
+    "origin": "SIN",
+    "dest": "EWR",
+    "feasible": true,
+    "strategy": "zero_shot",
+    "provider": "openai",
+    "response": "The Airbus A340-500 has a range of approximately 16,670 km, which exceeds the great-circle distance of about 15,350 km from Singapore (SIN) to Newark (EWR). However, it is important to note that the A340-500 is not ETOPS-capable, meaning it cannot operate over extended distances from suitable diversion airports, which is a significant consideration for transoceanic flights. Therefore, while the aircraft could technically cover the distance, operational limitations may prevent it from being a viable option for this route. \n\nThis is an educational tool, not flight-planning advice."
+  },
+  {
+    "question_id": 13,
+    "variant": "A340-500",
+    "origin": "SIN",
+    "dest": "EWR",
+    "feasible": true,
+    "strategy": "zero_shot",
+    "provider": "anthropic",
+    "response": "# A340-500: SIN \u2192 EWR Route Feasibility\n\nThe A340-500 **could theoretically complete this route**, as the great-circle distance (~15,350 km) sits within its maximum range (~16,670 km), leaving a modest ~1,320 km fuel buffer. However, real-world feasibility is severely constrained: the aircraft **lacks ETOPS certification**, meaning it cannot legally fly over remote oceanic regions for extended periods\u2014which this route necessarily requires crossing the Atlantic. Additionally, the slim margin doesn't account for headwinds, weather routing, or required fuel reserves, which could easily consume the buffer.\n\nThe 0.61 probability reflects this tension between raw range capability and regulatory/operational barriers.\n\n**Disclaimer:** This is an educational analysis only and should never be used for actual flight planning\u2014consult aircraft manufacturers, operators, and aviation authorities for real operations."
+  },
+  {
+    "question_id": 13,
+    "variant": "A340-500",
+    "origin": "SIN",
+    "dest": "EWR",
+    "feasible": true,
+    "strategy": "rag",
+    "provider": "openai",
+    "response": "The Airbus A340-500 has a maximum range of approximately 16,670 km (9,000 nautical miles), which is sufficient to cover the great-circle distance of approximately 15,350 km from Singapore (SIN) to Newark (EWR). This aircraft was specifically designed for ultra-long-haul routes, and it has successfully operated similar routes in the past, such as Singapore Airlines' Newark-Singapore service. However, it is important to note that the A340-500 is not ETOPS-capable, which could limit operational flexibility over certain oceanic routes. \n\nIn summary, while the A340-500 can technically fly the SIN to EWR route, operational considerations may affect its feasibility. This is an educational tool, not flight-planning advice."
+  },
+  {
+    "question_id": 13,
+    "variant": "A340-500",
+    "origin": "SIN",
+    "dest": "EWR",
+    "feasible": true,
+    "strategy": "rag",
+    "provider": "anthropic",
+    "response": "**Yes, the A340-500 can realistically fly SIN\u2192EWR.** The great-circle distance of 15,350 km falls within the aircraft's range of approximately 16,020 km, matching the real-world precedent: Singapore Airlines operated this exact route (SQ22) nonstop from 2004\u20132013 using the A340-500, with the eastbound leg covering 15,344 km in 18.5 hours. While ETOPS certification would not be required for this specific routing (which can follow more land-proximate paths), operational factors like fuel reserves, winds, and payload configuration would be critical to mission success. **This explanation is educational only and not suitable for flight planning or operational decisions.**"
+  },
+  {
+    "question_id": 13,
+    "variant": "A340-500",
+    "origin": "SIN",
+    "dest": "EWR",
+    "feasible": true,
+    "strategy": "rag_fewshot",
+    "provider": "openai",
+    "response": "Yes, the Airbus A340-500 can realistically fly the route from Singapore (SIN) to Newark (EWR), which has a great-circle distance of approximately 15,350 km. The A340-500 has a range of about 16,670 km, allowing it to cover the distance non-stop under optimal conditions. However, it is important to note that the A340-500 is not ETOPS-certified, which could pose operational limitations for overwater flights. (Educational tool, not flight-planning advice.)"
+  },
+  {
+    "question_id": 13,
+    "variant": "A340-500",
+    "origin": "SIN",
+    "dest": "EWR",
+    "feasible": true,
+    "strategy": "rag_fewshot",
+    "provider": "anthropic",
+    "response": "Yes, marginally feasible. The A340-500 has a published range of ~16,020 km, which exceeds the SIN\u2192EWR great-circle distance of 15,350 km\u2014Singapore Airlines operated this exact route nonstop from 2004\u20132013, with the eastbound leg clocking 15,344 km in 18.5 hours. However, the aircraft is not ETOPS-certified, and real-world routing (avoiding airspace restrictions) plus headwinds and reserve fuel requirements create tight margins; Singapore ultimately retired the service due to fuel economics. This assessment is an educational tool, not flight-planning advice."
+  },
+  {
+    "question_id": 14,
+    "variant": "767-300",
+    "origin": "ORD",
+    "dest": "NRT",
+    "feasible": true,
+    "strategy": "zero_shot",
+    "provider": "openai",
+    "response": "The Boeing 767-300 has a range of approximately 11,070 km, which exceeds the great-circle distance of 10,150 km from Chicago O'Hare (ORD) to Tokyo Narita (NRT). Additionally, its ETOPS capability allows it to operate on long overwater routes, which is essential for this transpacific flight. Given these specifications, the 767-300 can realistically fly this route. \n\nThis is an educational tool, not flight-planning advice."
+  },
+  {
+    "question_id": 14,
+    "variant": "767-300",
+    "origin": "ORD",
+    "dest": "NRT",
+    "feasible": true,
+    "strategy": "zero_shot",
+    "provider": "anthropic",
+    "response": "**Yes, the Boeing 767-300 could realistically fly ORD\u2192NRT.**\n\nThe great-circle distance of ~10,150 km sits comfortably within the aircraft's ~11,070 km range, leaving a reasonable safety margin (~920 km) for headwinds, climb/descent, and holding reserves. The 767-300 is ETOPS-certified, which is essential for this transpacific route over water and remote regions, allowing extended operations with a single functioning engine. However, the relatively tight margin means actual feasibility depends on payload, fuel burn, winds aloft, and alternate airport availability\u2014hence the moderate 0.55 probability reflects real-world operational variables rather than a purely geometric problem.\n\n*This is an educational explanation and not flight-planning advice; consult official performance data and airline operational procedures for actual flight planning.*"
+  },
+  {
+    "question_id": 14,
+    "variant": "767-300",
+    "origin": "ORD",
+    "dest": "NRT",
+    "feasible": true,
+    "strategy": "rag",
+    "provider": "openai",
+    "response": "The Boeing 767-300 has a range of approximately 11,070 km, which is sufficient to cover the great-circle distance of about 10,150 km from Chicago O'Hare International Airport (ORD) to Narita International Airport (NRT). Additionally, the aircraft is ETOPS-capable, allowing it to operate over extended distances from suitable airports, which is crucial for transoceanic flights. Given these specifications, the 767-300 can realistically fly this route. \n\nThis is an educational tool, not flight-planning advice."
+  },
+  {
+    "question_id": 14,
+    "variant": "767-300",
+    "origin": "ORD",
+    "dest": "NRT",
+    "feasible": true,
+    "strategy": "rag",
+    "provider": "anthropic",
+    "response": "**Feasibility Assessment: 767-300 ORD\u2192NRT**\n\nYes, the Boeing 767-300 can realistically fly this route. The aircraft's stated range of approximately 11,070 km exceeds the great-circle distance of 10,150 km by a comfortable margin of ~920 km, providing necessary reserves for headwinds, routing deviations, and required fuel reserves. Additionally, the 767-300ER is ETOPS-capable, which the provided background confirms through references to its extended-range variants and ANA's 767-300BCF conversion being certified for such operations since 2008. This Chicago-to-Tokyo routing is well within the aircraft's capabilities and represents a typical transpacific operation for the type.\n\n**Disclaimer:** This is an educational tool for understanding aircraft capabilities\u2014not flight-planning advice."
+  },
+  {
+    "question_id": 14,
+    "variant": "767-300",
+    "origin": "ORD",
+    "dest": "NRT",
+    "feasible": true,
+    "strategy": "rag_fewshot",
+    "provider": "openai",
+    "response": "Q: Could a Boeing 767-300 fly ORD \u2192 NRT (\u224810150 km)?\n\nA: Yes, the Boeing 767-300 has a range of approximately 11,070 km, which comfortably exceeds the great-circle distance of about 10,150 km between Chicago O'Hare (ORD) and Narita (NRT). Additionally, it is ETOPS-capable, allowing it to operate on long overwater routes with appropriate diversion planning. Therefore, this aircraft can realistically complete the flight without issues. (Educational tool, not flight-planning advice.)"
+  },
+  {
+    "question_id": 14,
+    "variant": "767-300",
+    "origin": "ORD",
+    "dest": "NRT",
+    "feasible": true,
+    "strategy": "rag_fewshot",
+    "provider": "anthropic",
+    "response": "Yes. The Boeing 767-300 has a range of approximately 11,070 km, which exceeds the great-circle distance of 10,150 km from Chicago (ORD) to Tokyo (NRT), and the aircraft is ETOPS-capable, meeting oceanic-diversion requirements for this transpacific crossing. While the modest 0.55 feasibility score reflects real-world fuel reserves and weather contingencies, the aircraft is type-certified and regularly operated on this route by carriers like United and ANA.\n\n*This is an educational tool, not flight-planning advice.*"
+  },
+  {
+    "question_id": 15,
+    "variant": "ERJ 145",
+    "origin": "ZRH",
+    "dest": "LIS",
+    "feasible": true,
+    "strategy": "zero_shot",
+    "provider": "openai",
+    "response": "The Embraer ERJ 145 has a range of approximately 2873 km, which exceeds the great-circle distance of 1850 km from Zurich (ZRH) to Lisbon (LIS). However, since the ERJ 145 is not ETOPS-capable, it may face operational restrictions on routes over water or remote areas where alternate airports are not readily available. Given the distance and the aircraft's range, it could realistically fly this route under normal circumstances, assuming suitable alternate airports are available. \n\nThis is an educational tool, not flight-planning advice."
+  },
+  {
+    "question_id": 15,
+    "variant": "ERJ 145",
+    "origin": "ZRH",
+    "dest": "LIS",
+    "feasible": true,
+    "strategy": "zero_shot",
+    "provider": "anthropic",
+    "response": "**Yes, this route is feasible for the ERJ 145.** The great-circle distance of 1,850 km is well within the aircraft's maximum range of 2,873 km, leaving approximately 1,000 km of safety margin. The ERJ 145 is a regional jet with typical reserves for climb, descent, and contingencies, making Zurich-to-Lisbon a comfortable single-hop flight. However, note that the ERJ 145 is not ETOPS-certified, so it must remain within gliding distance of suitable diversion airports\u2014this route stays over populated European airspace and offers numerous alternatives (e.g., Spain, southern France), making it operationally straightforward.\n\n**Disclaimer:** This is an educational analysis only and should not be used for actual flight planning or operational decisions."
+  },
+  {
+    "question_id": 15,
+    "variant": "ERJ 145",
+    "origin": "ZRH",
+    "dest": "LIS",
+    "feasible": true,
+    "strategy": "rag",
+    "provider": "openai",
+    "response": "The Embraer ERJ 145 has a range of approximately 2,873 km, which is sufficient to cover the great-circle distance of about 1,850 km from Zurich (ZRH) to Lisbon (LIS). Given that the route is well within the aircraft's range capabilities, it is feasible for the ERJ 145 to operate this flight. However, it's important to note that the ERJ 145 is not ETOPS-capable, which could limit its operational flexibility on routes that require extended over-water flying. \n\nThis is an educational tool, not flight-planning advice."
+  },
+  {
+    "question_id": 15,
+    "variant": "ERJ 145",
+    "origin": "ZRH",
+    "dest": "LIS",
+    "feasible": true,
+    "strategy": "rag",
+    "provider": "anthropic",
+    "response": "**Route Feasibility: YES (with caveats)**\n\nThe ERJ 145 can feasibly fly ZRH\u2013LIS (1,850 km) since the great-circle distance is well within the aircraft's ~2,873 km range. However, this verdict depends heavily on **which variant**: the baseline ERJ 145ER or EU models (4,174 kg fuel capacity) would have minimal reserves, whereas the ERJ 145LR, LU, or XR variants (5,187 kg fuel, enhanced engines per Embraer ERJ family specifications) provide comfortable margins with their superior fuel capacity and Rolls-Royce AE 3007A1/A1E engines offering 15% more power and lower specific fuel consumption. The route's feasibility is strengthened by reasonable cruise altitudes and favorable wind patterns on this westbound European corridor, though the aircraft cannot operate ETOPS-190, meaning any diversion must remain within single-engine endurance of suitable alternates.\n\n**Disclaimer:** This is an educational tool only and does not constitute flight-planning advice; consult performance charts, weight-and-balance data, and current weather for actual flight operations."
+  },
+  {
+    "question_id": 15,
+    "variant": "ERJ 145",
+    "origin": "ZRH",
+    "dest": "LIS",
+    "feasible": true,
+    "strategy": "rag_fewshot",
+    "provider": "openai",
+    "response": "Yes, the Embraer ERJ 145 can realistically fly the route from Z\u00fcrich (ZRH) to Lisbon (LIS), which has a great-circle distance of approximately 1850 km. The ERJ 145 has a range of about 2873 km, allowing it to comfortably cover this distance without the need for refueling. However, it is important to note that the ERJ 145 is not ETOPS-capable, which may limit its operational flexibility on certain routes. (Educational tool, not flight-planning advice.)"
+  },
+  {
+    "question_id": 15,
+    "variant": "ERJ 145",
+    "origin": "ZRH",
+    "dest": "LIS",
+    "feasible": true,
+    "strategy": "rag_fewshot",
+    "provider": "anthropic",
+    "response": "Yes. The ERJ 145 could realistically fly Z\u00fcrich \u2192 Lisbon (~1850 km), particularly in extended-range variants like the ERJ 145LR or ERJ 145XR, which offer fuel capacities of 5,187 kg and enhanced aerodynamic efficiency. Even the baseline ERJ 145ER with 4,174 kg fuel capacity approaches this distance, though reserves would be tighter. The ~1850 km great-circle distance is well within the aircraft's published ~2873 km range, leaving adequate fuel margin for headwinds, climb/descent, and standard reserves. (Educational tool, not flight-planning advice.)"
+  },
+  {
+    "question_id": 16,
+    "variant": "Fokker 100",
+    "origin": "AMS",
+    "dest": "ATH",
+    "feasible": true,
+    "strategy": "zero_shot",
+    "provider": "openai",
+    "response": "The Fokker 100 has a range of approximately 3170 km, which is sufficient to cover the great-circle distance of about 2170 km from Amsterdam (AMS) to Athens (ATH). However, it's important to note that the Fokker 100 is not ETOPS-capable, which may limit its operational flexibility over certain routes, especially if they involve extended over-water segments. Given the distance is well within its range, the aircraft could realistically fly this route under normal conditions. \n\nThis is an educational tool, not flight-planning advice."
+  },
+  {
+    "question_id": 16,
+    "variant": "Fokker 100",
+    "origin": "AMS",
+    "dest": "ATH",
+    "feasible": true,
+    "strategy": "zero_shot",
+    "provider": "anthropic",
+    "response": "The Fokker 100 can realistically fly the Amsterdam-to-Athens route. The great-circle distance of ~2,170 km is well within its maximum range of ~3,170 km, leaving a comfortable safety margin of ~1,000 km for reserves, headwinds, and climbing/descent segments. This is a straightforward over-land European route with multiple alternates available, requiring no extended overwater operations that would demand ETOPS certification. The 0.81 feasibility probability reflects minor operational variables (fuel planning, winds aloft, payload) rather than a fundamental capability gap.\n\n*This is an educational tool for aircraft capability analysis, not flight-planning or operational advice.*"
+  },
+  {
+    "question_id": 16,
+    "variant": "Fokker 100",
+    "origin": "AMS",
+    "dest": "ATH",
+    "feasible": true,
+    "strategy": "rag",
+    "provider": "openai",
+    "response": "The Fokker 100 has a range of approximately 3,170 km, which is sufficient to cover the great-circle distance of about 2,170 km from Amsterdam (AMS) to Athens (ATH). Since the route is well within the aircraft's range, it is feasible for the Fokker 100 to operate this flight. However, it is important to note that the Fokker 100 is not ETOPS-capable, which may limit its operational flexibility on certain routes, particularly over water or remote areas. \n\nThis analysis is for educational purposes only and should not be considered flight-planning advice."
+  },
+  {
+    "question_id": 16,
+    "variant": "Fokker 100",
+    "origin": "AMS",
+    "dest": "ATH",
+    "feasible": true,
+    "strategy": "rag",
+    "provider": "anthropic",
+    "response": "**Yes, the Fokker 100 is feasible for this route.** The aircraft's maximum range of approximately 3,170 km comfortably exceeds the great-circle distance of 2,170 km between Amsterdam (AMS) and Athens (ATH), providing a comfortable safety margin for headwinds, alternate routing, and reserve fuel requirements. As a regional jet powered by Rolls-Royce Tay turbofans with a modern glass cockpit and flight management system, it's well-suited for this European city-pair route. The 0.81 feasibility probability reflects realistic operational considerations like payload-range trade-offs and weather contingencies.\n\n*Disclaimer: This is an educational tool for aircraft capability assessment, not actual flight-planning advice\u2014consult certified flight dispatchers and current aircraft performance data for real operations.*"
+  },
+  {
+    "question_id": 16,
+    "variant": "Fokker 100",
+    "origin": "AMS",
+    "dest": "ATH",
+    "feasible": true,
+    "strategy": "rag_fewshot",
+    "provider": "openai",
+    "response": "Yes, the Fokker 100 could realistically fly the route from Amsterdam (AMS) to Athens (ATH), which has a great-circle distance of approximately 2170 km. With a range of about 3170 km, the Fokker 100 comfortably exceeds the distance required for this flight, allowing for additional fuel reserves and operational contingencies. However, it is important to note that the Fokker 100 is not ETOPS-capable, which may limit its operational flexibility on certain routes. (Educational tool, not flight-planning advice.)"
+  },
+  {
+    "question_id": 16,
+    "variant": "Fokker 100",
+    "origin": "AMS",
+    "dest": "ATH",
+    "feasible": true,
+    "strategy": "rag_fewshot",
+    "provider": "anthropic",
+    "response": "Yes. The Fokker 100 has a range of approximately 3170 km, which comfortably exceeds the ~2170 km great-circle distance from Amsterdam to Athens. The route is well within the aircraft's capabilities for a single flight, with adequate reserves for headwinds and standard procedures. The Fokker 100 is not ETOPS-certified, but this European route does not require oceanic certification.\n\n*This is an educational tool, not flight-planning advice.*"
+  },
+  {
+    "question_id": 17,
+    "variant": "MD-11",
+    "origin": "FRA",
+    "dest": "GRU",
+    "feasible": true,
+    "strategy": "zero_shot",
+    "provider": "openai",
+    "response": "The MD-11 has a range of approximately 12,455 km, which exceeds the great-circle distance of about 9,850 km from Frankfurt (FRA) to S\u00e3o Paulo (GRU). However, it is important to note that the MD-11 is not ETOPS-capable, which could pose challenges for over-water operations or routes that require alternate airports. Given the range and the distance, the flight is feasible, but operational considerations regarding ETOPS should be taken into account. \n\nThis is an educational tool, not flight-planning advice."
+  },
+  {
+    "question_id": 17,
+    "variant": "MD-11",
+    "origin": "FRA",
+    "dest": "GRU",
+    "feasible": true,
+    "strategy": "zero_shot",
+    "provider": "anthropic",
+    "response": "The MD-11 could theoretically fly the Frankfurt\u2013S\u00e3o Paulo route, as the great-circle distance of 9,850 km falls within its approximately 12,455 km range, leaving a reasonable fuel margin. However, real-world factors significantly complicate this: the MD-11 is **not ETOPS-certified**, meaning it cannot legally operate extended flights over remote ocean areas (which this South Atlantic crossing requires). Additionally, actual flight planning must account for headwinds, weather routing, climb/descent segments, and required fuel reserves\u2014all of which reduce usable range well below the theoretical maximum. While the aircraft has the raw capability, regulatory restrictions make this route operationally **infeasible** despite favorable range numbers.\n\n*This assessment is educational only and should not be used for actual flight planning or operational decision-making.*"
+  },
+  {
+    "question_id": 17,
+    "variant": "MD-11",
+    "origin": "FRA",
+    "dest": "GRU",
+    "feasible": true,
+    "strategy": "rag",
+    "provider": "openai",
+    "response": "The MD-11 has a maximum range of approximately 12,455 km, which exceeds the great-circle distance of about 9,850 km from Frankfurt (FRA) to S\u00e3o Paulo (GRU). This means that the aircraft could realistically complete the route without running out of fuel. However, it's important to note that the MD-11 is not ETOPS-capable, which could limit its operational flexibility on transoceanic routes. Overall, the MD-11 could feasibly fly this route based on its range specifications.\n\nThis is an educational tool, not flight-planning advice."
+  },
+  {
+    "question_id": 17,
+    "variant": "MD-11",
+    "origin": "FRA",
+    "dest": "GRU",
+    "feasible": true,
+    "strategy": "rag",
+    "provider": "anthropic",
+    "response": "**Feasibility Assessment: MD-11 FRA \u2192 GRU**\n\nThe MD-11 could realistically complete this Frankfurt-to-S\u00e3o Paulo route. The standard MD-11 variant offers a maximum range of approximately 13,200 km, exceeding the great-circle distance of 9,850 km by a comfortable margin. However, this analysis relies on favorable conditions: the aircraft would need minimal headwinds, optimal weight loading, and routing that closely follows the great-circle path\u2014practical flight plans typically require 5-10% additional distance for air traffic control routing.\n\nA critical limitation is the MD-11's lack of ETOPS (Extended-range Twin-engine Operations) certification, meaning it cannot legally deviate far from suitable diversion airports. This trijet's three-engine design was \"classically ill-timed\" according to the sources, emerging as the industry shifted toward ETOPS-capable twinjet efficiency. While the distance is achievable on paper, real-world operational constraints and regulatory requirements would make scheduling this route challenging.\n\n**Disclaimer:** This is an educational analysis tool, not flight-planning advice\u2014always consult official aircraft performance data and regulatory authorities for actual route planning."
+  },
+  {
+    "question_id": 17,
+    "variant": "MD-11",
+    "origin": "FRA",
+    "dest": "GRU",
+    "feasible": true,
+    "strategy": "rag_fewshot",
+    "provider": "openai",
+    "response": "Yes, the McDonnell Douglas MD-11 could realistically fly the route from Frankfurt (FRA) to S\u00e3o Paulo (GRU), which has a great-circle distance of approximately 9850 km. The MD-11 has a range of about 12455 km, allowing it to cover the distance without the need for refueling. However, it is worth noting that the MD-11 is not ETOPS-capable, which may limit operational flexibility on certain routes. (Educational tool, not flight-planning advice.)"
+  },
+  {
+    "question_id": 17,
+    "variant": "MD-11",
+    "origin": "FRA",
+    "dest": "GRU",
+    "feasible": true,
+    "strategy": "rag_fewshot",
+    "provider": "anthropic",
+    "response": "Yes. The MD-11's published range of approximately 12,455 km comfortably exceeds the Frankfurt\u2013S\u00e3o Paulo great-circle distance of ~9,850 km, leaving adequate fuel reserves for standard flight procedures. However, the MD-11 is not ETOPS-certified, which historically limited its transatlantic operations to tracks with closer diversion airports\u2014though the South Atlantic routing between Europe and Brazil typically allowed such operations. Modern cargo conversions of the MD-11 remain in service despite recent grounding directives, indicating the aircraft remains viable for this distance when properly configured and maintained.\n\n*Educational tool, not flight-planning advice.*"
+  },
+  {
+    "question_id": 18,
+    "variant": "DC-3",
+    "origin": "LHR",
+    "dest": "CDG",
+    "feasible": true,
+    "strategy": "zero_shot",
+    "provider": "openai",
+    "response": "The Douglas DC-3 has a range of approximately 2400 km, which is more than sufficient to cover the great-circle distance of about 340 km from London Heathrow (LHR) to Charles de Gaulle (CDG). Additionally, the route is well within the aircraft's capabilities, and since it does not require ETOPS certification, it can operate on this short-haul flight without issue. Therefore, the DC-3 can realistically fly this route. \n\nThis is an educational tool, not flight-planning advice."
+  },
+  {
+    "question_id": 18,
+    "variant": "DC-3",
+    "origin": "LHR",
+    "dest": "CDG",
+    "feasible": true,
+    "strategy": "zero_shot",
+    "provider": "anthropic",
+    "response": "The DC-3 can easily fly LHR (London Heathrow) to CDG (Paris Charles de Gaulle) at ~340 km\u2014well within its 2,400 km range with substantial reserves for headwind, climb, and descent. ETOPS certification is irrelevant for this short over-water segment; the route is primarily overland with only brief North Sea crossing, making it safe for non-ETOPS aircraft. Historical DC-3s routinely flew comparable European routes. The 0.95 feasibility probability is appropriate, with the minor 5% reservation accounting only for mechanical readiness or weather constraints.\n\n*This is an educational explanation only, not flight-planning advice.*"
+  },
+  {
+    "question_id": 18,
+    "variant": "DC-3",
+    "origin": "LHR",
+    "dest": "CDG",
+    "feasible": true,
+    "strategy": "rag",
+    "provider": "openai",
+    "response": "The Douglas DC-3 has a range of approximately 2,400 km, which is significantly greater than the great-circle distance of about 340 km from London Heathrow (LHR) to Charles de Gaulle (CDG) in Paris. This means the DC-3 could easily complete the flight without exceeding its range. Additionally, the route does not require ETOPS capabilities, as it is a short flight over land. Therefore, the DC-3 is well-suited for this route.\n\nThis response is an educational tool, not flight-planning advice."
+  },
+  {
+    "question_id": 18,
+    "variant": "DC-3",
+    "origin": "LHR",
+    "dest": "CDG",
+    "feasible": true,
+    "strategy": "rag",
+    "provider": "anthropic",
+    "response": "**Verdict: Yes, the DC-3 could easily fly LHR\u2013CDG.**\n\nThe Douglas DC-3 has a range of approximately 2,400 km, which vastly exceeds the great-circle distance of 340 km between London Heathrow and Paris Charles de Gaulle. The route requires only ~14% of the aircraft's maximum range, leaving substantial reserves for headwinds, routing adjustments, and fuel margins. The DC-3 was historically one of the most reliable and widely-used transport aircraft, regularly operating such short European routes throughout its service life. No range limitation exists; the primary constraints today would be regulatory (the DC-3 is largely retired from passenger service) rather than technical.\n\n*This is an educational tool only and should not be used for actual flight planning.*"
+  },
+  {
+    "question_id": 18,
+    "variant": "DC-3",
+    "origin": "LHR",
+    "dest": "CDG",
+    "feasible": true,
+    "strategy": "rag_fewshot",
+    "provider": "openai",
+    "response": "The DC-3 has a range of approximately 2400 km, which is significantly less than the great-circle distance of about 340 km from London Heathrow (LHR) to Charles de Gaulle (CDG) in Paris. Therefore, the DC-3 can easily complete this route without any issues, as the distance is well within its operational range. Additionally, the DC-3 is not ETOPS-capable, but this is irrelevant for such a short flight over land. (Educational tool, not flight-planning advice.)"
+  },
+  {
+    "question_id": 18,
+    "variant": "DC-3",
+    "origin": "LHR",
+    "dest": "CDG",
+    "feasible": true,
+    "strategy": "rag_fewshot",
+    "provider": "anthropic",
+    "response": "Yes. The DC-3 has a range of approximately 2400 km, which comfortably exceeds the ~340 km great-circle distance between London Heathrow (LHR) and Paris Charles de Gaulle (CDG). This short-haul European route is well within the aircraft's capabilities, even accounting for headwinds and standard reserve fuel requirements. The DC-3 was historically operated on exactly this type of regional service throughout Europe.\n\n*This is an educational tool, not flight-planning advice.*"
+  },
+  {
+    "question_id": 19,
+    "variant": "Spitfire",
+    "origin": "LHR",
+    "dest": "CDG",
+    "feasible": true,
+    "strategy": "zero_shot",
+    "provider": "openai",
+    "response": "The Supermarine Spitfire has a range of approximately 756 km, which is more than sufficient for the great-circle distance of about 340 km from London Heathrow (LHR) to Charles de Gaulle (CDG). Since the route is well within the aircraft's range, it could realistically complete the flight. However, it's important to note that the Spitfire is not ETOPS-capable, which is not a concern for this short route. \n\nThis is an educational tool, not flight-planning advice."
+  },
+  {
+    "question_id": 19,
+    "variant": "Spitfire",
+    "origin": "LHR",
+    "dest": "CDG",
+    "feasible": true,
+    "strategy": "zero_shot",
+    "provider": "anthropic",
+    "response": "# Spitfire LHR\u2013CDG Route Analysis\n\n**The route is feasible.** The great-circle distance of 340 km is well within the Spitfire's approximate 756 km range, leaving a comfortable 416 km safety margin. The Supermarine Spitfire was a single-engine fighter with modest fuel capacity but adequate range for this short cross-Channel hop, which was historically common during WWII operations. Weather conditions and headwinds would be the primary operational considerations rather than range limitations.\n\n*This is an educational tool only, not actual flight-planning or certification advice.*"
+  },
+  {
+    "question_id": 19,
+    "variant": "Spitfire",
+    "origin": "LHR",
+    "dest": "CDG",
+    "feasible": true,
+    "strategy": "rag",
+    "provider": "openai",
+    "response": "The Supermarine Spitfire has a range of approximately 756 km, which exceeds the great-circle distance of about 340 km from London Heathrow (LHR) to Charles de Gaulle Airport (CDG) in Paris. This makes the flight feasible in terms of distance. However, it's important to note that the Spitfire is not ETOPS-capable, meaning it lacks the necessary systems for extended over-water operations, which could be a concern depending on the specific flight path. Overall, while the Spitfire could technically cover the distance, operational considerations may limit its use for this route. \n\nThis is an educational tool, not flight-planning advice."
+  },
+  {
+    "question_id": 19,
+    "variant": "Spitfire",
+    "origin": "LHR",
+    "dest": "CDG",
+    "feasible": true,
+    "strategy": "rag",
+    "provider": "anthropic",
+    "response": "# Route Feasibility Assessment: Spitfire LHR \u2192 CDG\n\nThe Spitfire's standard range of approximately 479 miles (771 km) technically exceeds the 340 km great-circle distance to Paris, making this route theoretically feasible under ideal conditions. However, the aircraft's combat range of only 248 miles (399 km) is insufficient for operational safety, leaving minimal reserve fuel for headwinds, climb, or diversion. The source material notes the Spitfire remained \"short-legged\" throughout its service life except in dedicated photo-reconnaissance variants with extra fuel tanks, confirming this was never intended as a cross-Channel cruiser. While a ferry variant with extended fuel could accomplish this distance, a standard operational Spitfire would be dangerously marginal for this route.\n\n**Disclaimer:** This is an educational analysis tool only and should not be used for actual flight planning."
+  },
+  {
+    "question_id": 19,
+    "variant": "Spitfire",
+    "origin": "LHR",
+    "dest": "CDG",
+    "feasible": true,
+    "strategy": "rag_fewshot",
+    "provider": "openai",
+    "response": "Yes, a Supermarine Spitfire could realistically fly the route from London Heathrow (LHR) to Charles de Gaulle Airport (CDG) in Paris, which has a great-circle distance of approximately 340 km. The Spitfire has a range of about 756 km, allowing it to comfortably cover this distance without the need for refueling. However, it is important to note that the Spitfire is not ETOPS-capable, which is not a concern for this short flight. (Educational tool, not flight-planning advice.)"
+  },
+  {
+    "question_id": 19,
+    "variant": "Spitfire",
+    "origin": "LHR",
+    "dest": "CDG",
+    "feasible": true,
+    "strategy": "rag_fewshot",
+    "provider": "anthropic",
+    "response": "Yes. The Supermarine Spitfire could fly London (LHR) \u2192 Paris (CDG) at ~340 km. Standard Spitfires had a range of approximately 756 km, well exceeding this short distance, though the source notes the aircraft remained \"short-legged\" throughout its life except in photo-reconnaissance variants. Combat range was more limited (~399 km), but this leisurely peacetime crossing presents no fuel constraint. Ferry range with auxiliary tanks reached 1,800 km, making this route trivial for the aircraft.\n\n*Disclaimer: This is an educational tool, not flight-planning advice.*"
+  }
+]
