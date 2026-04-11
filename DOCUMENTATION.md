@@ -413,7 +413,25 @@ To measure the contribution of each block, we test the pipeline with individual 
 
 **Platform:** Hugging Face Spaces (Gradio SDK, CPU basic — free tier).
 
-### 5.2 Separation of Training and Inference
+### 5.2 Screenshots
+
+**Main UI** — input form with image upload, route selection, NLP strategy toggle, LLM provider selector, and OCR tiebreaker checkbox:
+
+![Main UI](docs/screenshots/Screenshot%202026-04-11%20at%2023.46.42.png)
+
+**Example gallery** — five pre-loaded FGVC test images with preset routes for one-click testing:
+
+![Examples](docs/screenshots/Screenshot%202026-04-11%20at%2023.46.47.png)
+
+**Result: A380 DXB→SYD (feasible)** — CV correctly identifies the A380 (78%), numeric model gives probability 0.48, LLM explains feasibility citing range and ETOPS, and retrieved RAG sources are listed:
+
+![A380 result](docs/screenshots/Screenshot%202026-04-11%20at%2023.48.29.png)
+
+**Result: 777-200 with OCR** — CV identifies 777-200, OCR detects registration `HB-JNA` (not in registry), LLM explains the route is feasible with range and ETOPS reasoning:
+
+![777-200 OCR](docs/screenshots/Screenshot%202026-04-11%20at%2023.52.38.png)
+
+### 5.3 Separation of Training and Inference
 
 | Training (offline) | Inference (deployed) |
 |---|---|
