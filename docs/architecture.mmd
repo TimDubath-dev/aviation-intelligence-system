@@ -1,0 +1,26 @@
+graph TD
+    A["Aircraft Photo"] --> B["CV: DINOv2-base<br/>100 FGVC variants"]
+    B --> C{"OCR Tiebreaker<br/>(EasyOCR + OpenSky)"}
+    C --> D["Predicted Variant"]
+
+    E["Route: Origin → Dest"] --> F["Great-circle<br/>Distance (km)"]
+
+    D --> G["Spec Lookup<br/>(curated CSV)"]
+    F --> G
+
+    G --> H["Numeric ML<br/>LogReg / MLP / XGBoost"]
+    H --> I["Feasibility<br/>Probability"]
+
+    D --> J["RAG Retriever<br/>FAISS + MiniLM"]
+    I --> J
+    J --> K["LLM Explainer<br/>GPT-4o-mini / Haiku"]
+    K --> L["Natural-language<br/>Explanation"]
+
+    style A fill:#4A90D9,color:#fff
+    style E fill:#4A90D9,color:#fff
+    style B fill:#E8744F,color:#fff
+    style C fill:#E8744F,color:#fff
+    style H fill:#50B86C,color:#fff
+    style J fill:#9B59B6,color:#fff
+    style K fill:#9B59B6,color:#fff
+    style L fill:#2C3E50,color:#fff

@@ -28,34 +28,7 @@ A multimodal AI assistant for aviation enthusiasts, plane spotters, and journali
 
 ## What it does
 
-```
-        ┌──────────────────┐                       ┌──────────────────┐
-        │  Aircraft photo  │                       │  Route ZRH→JFK   │
-        └────────┬─────────┘                       └────────┬─────────┘
-                 ▼                                          │
-        ┌──────────────────┐                                │
-        │  CV: ViT-base    │                                │
-        │  100 variants    │                                │
-        └────────┬─────────┘                                │
-                 │ predicted variant                        │
-                 ▼                                          │
-        ┌──────────────────┐                                │
-        │  Spec lookup     │ ◄──────────────────────────────┘
-        │  (curated CSV)   │
-        └────────┬─────────┘
-                 │ specs + great-circle distance + features
-                 ▼
-        ┌──────────────────┐
-        │  Numeric ML      │   Logistic Regression │ MLP │ XGBoost
-        │  feasibility     │
-        └────────┬─────────┘
-                 │ verdict + probability
-                 ▼
-        ┌──────────────────┐    ┌──────────────────────────┐
-        │  RAG retriever   │ ──►│  LLM explainer           │ ──►  natural-language answer
-        │  FAISS · MiniLM  │    │  GPT-4o-mini / Haiku     │      with cited sources
-        └──────────────────┘    └──────────────────────────┘
-```
+![Architecture Diagram](docs/architecture.png)
 
 The pipeline is **chained**, not parallel — every block consumes the previous block's output. CV decides *which plane*, the spec lookup pulls the matching row, the numeric model predicts feasibility from the resulting features, and the LLM produces a grounded explanation given all upstream outputs.
 

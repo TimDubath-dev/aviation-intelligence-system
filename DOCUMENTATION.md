@@ -50,6 +50,8 @@ Photo ──► [CV: DINOv2] ──► predicted variant
                     Natural-language explanation
 ```
 
+![Architecture Diagram](docs/architecture.png)
+
 Concretely:
 1. **CV** receives the photo → outputs predicted aircraft variant (one of 100 FGVC classes) + top-5 confidence scores.
 2. **OCR tiebreaker** (optional) reads fuselage text via EasyOCR, extracts an aircraft registration (e.g. `HB-JNA`), looks it up in the OpenSky aircraft database (52k entries), and promotes the matching variant within the CV top-5.
@@ -354,7 +356,7 @@ The permutation importance confirms that the model learned the **physics-based r
 
 **Prompt-strategy comparison (GPT-4o-mini, 20 hand-crafted questions):**
 
-Example questions span easy (Cessna 172 ZRH→BSL), medium (A320 ZRH→JFK), hard (A340-500 SIN→EWR), and adversarial (fictional aircraft, impossible routes).
+20 questions span easy (Cessna 172 ZRH→BSL), medium (A320 ZRH→JFK), hard (A340-500 SIN→EWR), and edge cases (Spitfire LHR→CDG, DC-3 short-hop). The full set of 120 LLM responses is stored in `models/nlp/eval_results.json` for reproducibility.
 
 | Strategy | Faithfulness (1–5) | Helpfulness (1–5) | Grounding (% citing sources) |
 |---|---|---|---|
@@ -417,19 +419,19 @@ To measure the contribution of each block, we test the pipeline with individual 
 
 **Main UI** — input form with image upload, route selection, NLP strategy toggle, LLM provider selector, and OCR tiebreaker checkbox:
 
-![Main UI](docs/screenshots/Screenshot%202026-04-11%20at%2023.46.42.png)
+![Main UI](docs/screenshots/01_main_ui.png)
 
 **Example gallery** — five pre-loaded FGVC test images with preset routes for one-click testing:
 
-![Examples](docs/screenshots/Screenshot%202026-04-11%20at%2023.46.47.png)
+![Examples](docs/screenshots/02_example_gallery.png)
 
-**Result: A380 DXB→SYD (feasible)** — CV correctly identifies the A380 (78%), numeric model gives probability 0.48, LLM explains feasibility citing range and ETOPS, and retrieved RAG sources are listed:
+**Result: A380 DXB→SYD (feasible)** — CV correctly identifies the A380 (78%), numeric model gives feasibility probability 0.48 (the relatively low confidence reflects payload/headwind uncertainty near the range limit — see Section 3.2 on synthetic label generation), LLM explains the verdict citing range and ETOPS, and retrieved RAG sources are listed:
 
-![A380 result](docs/screenshots/Screenshot%202026-04-11%20at%2023.48.29.png)
+![A380 result](docs/screenshots/03_result_a380.png)
 
 **Result: 777-200 with OCR** — CV identifies 777-200, OCR detects registration `HB-JNA` (not in registry), LLM explains the route is feasible with range and ETOPS reasoning:
 
-![777-200 OCR](docs/screenshots/Screenshot%202026-04-11%20at%2023.52.38.png)
+![777-200 OCR](docs/screenshots/04_result_777_ocr.png)
 
 ### 5.3 Separation of Training and Inference
 
