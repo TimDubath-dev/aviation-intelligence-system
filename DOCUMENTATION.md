@@ -303,9 +303,9 @@ All strategies share the same system prompt that instructs the LLM to be concise
 | Model | Top-1 | Top-5 | Training |
 |---|---|---|---|
 | **DINOv2-base (ours)** | **84.5%** | **97.0%** | 20 epochs, FGVC + 2k extras, T4 GPU |
-| CLIP zero-shot (no training) | ~15%* | ~40%* | None |
+| CLIP zero-shot (no training) | 32.8% | 77.4% | None |
 
-*CLIP zero-shot estimates based on the prompt template `"a photo of a {variant} aircraft"`. The massive gap confirms that this fine-grained 100-class task is far beyond zero-shot capability — supervised fine-tuning is essential.
+CLIP zero-shot uses the prompt template `"a photo of a {variant} aircraft"` for each of the 100 classes (full results: `models/cv/clip_baseline_metrics.json`, 3333 test images). The **51.7 percentage-point gap** in top-1 accuracy confirms that this fine-grained 100-class task is far beyond zero-shot capability — supervised fine-tuning with a strong backbone (DINOv2) and domain-specific augmentation data (Wikimedia Commons) is essential. Notably, CLIP's top-5 (77.4%) is decent — it usually identifies the correct aircraft *family* but cannot distinguish within-family variants.
 
 ### 4.2 ML on Numeric Data
 
