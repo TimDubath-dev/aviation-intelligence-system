@@ -128,7 +128,10 @@ This design ensures that a CV error propagates to the numeric model and to the e
 - 1,236 chunks from ~120 articles (100 aircraft + 20 major airports).
 - Average chunk length: ~480 words. Longest article: San Francisco International Airport (19 chunks).
 
-See `notebooks/01_eda_specs.ipynb` and `notebooks/02_eda_images.ipynb` for visualizations.
+See the following notebooks for full visualizations:
+- [`notebooks/01_eda_specs.ipynb`](notebooks/01_eda_specs.ipynb) — aircraft spec distributions, manufacturer counts, missingness
+- [`notebooks/02_eda_images.ipynb`](notebooks/02_eda_images.ipynb) — FGVC class balance, sample image grid
+- [`notebooks/03_route_dataset.ipynb`](notebooks/03_route_dataset.ipynb) — route-feasibility label distribution, feature histograms, hard-segment analysis, correlation matrix
 
 ---
 
@@ -398,6 +401,20 @@ To measure the contribution of each block, we test the pipeline with individual 
 | **Without numeric model** (LLM-only feasibility) | LLM is asked to determine feasibility from specs alone (no probability) | LLM gives correct yes/no in ~80% of cases but provides no probability and occasionally misjudges edge cases (e.g. says A320 can do ZRH→JFK when it can't). The numeric model's calibrated probability is a clear improvement. |
 | **Without RAG** (zero-shot LLM) | No retrieved context; LLM uses only parametric memory | Faithfulness drops from 4.6 to 3.4. Hallucinations increase. The LLM sometimes invents specs. |
 | **Without OCR** | Registration-based tiebreaker disabled | No impact on FGVC test accuracy (text mostly unreadable at FGVC resolution). Impact on real-world photos: resolves ~15% of within-family confusions when registration is legible. |
+
+### 4.5 OCR Tiebreaker Evaluation
+
+Quantitative evaluation on a sample of 667 FGVC test images (every 5th image):
+
+| Metric | Value |
+|---|---|
+| Registration found by OCR | 264 / 667 (**39.6%**) |
+| Registration matched to a known variant in OpenSky | 36 / 264 (5.4%) |
+| Matched variant is correct | 35 / 36 (**97.2%**) |
+
+**Interpretation:** OCR successfully reads a registration-like string from ~40% of FGVC test images. However, only 5.4% of those are in our 52k-entry OpenSky lookup table — this is expected because FGVC contains many historic, military, and non-Western aircraft whose registrations are not in OpenSky. The critical finding is the **97.2% correctness rate**: when the OCR finds a registration that maps to a variant, it is almost always correct. This makes it a high-precision, low-recall tiebreaker — exactly the right profile for promoting within the CV top-5 without introducing false positives.
+
+On real-world web/phone photos (where registrations are typically larger and more legible than in FGVC), the detection rate is expected to be significantly higher.
 
 **Conclusion:** every block contributes measurably. CV provides the initial identification (essential), the numeric model adds calibrated probabilistic reasoning (more reliable than LLM-only), and RAG grounds the explanation in factual sources (prevents hallucination). The OCR tiebreaker is a targeted enhancement for the CV block's weakest failure mode (within-family confusion).
 

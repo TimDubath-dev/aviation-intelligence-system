@@ -1,0 +1,9 @@
+{
+  "total_images": 667,
+  "registration_found": 264,
+  "registration_found_pct": 39.6,
+  "variant_matched": 36,
+  "variant_matched_pct": 5.4,
+  "variant_correct": 35,
+  "variant_correct_pct": 97.2
+}
