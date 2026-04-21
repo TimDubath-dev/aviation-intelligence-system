@@ -62,7 +62,7 @@ def main() -> None:
         "context": "\n\n".join(f"[{h['title']}] {h['text']}" for h in hits),
     }
     sys, user = prompts.build("rag", ctx)
-    answer = generate(sys, user, provider="openai")
+    answer, _ = generate(sys, user, provider="openai")
     print(f"\n{answer}\n")
     print("== ✅ End-to-end pipeline OK ==")
 

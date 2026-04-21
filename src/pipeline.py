@@ -47,6 +47,7 @@ class PipelineResult:
     feasibility: dict
     explanation: str
     sources: list[str]
+    model: str = ""
     ocr: dict | None = None  # {registration, variant, ocr_text, used}
 
 
@@ -134,7 +135,7 @@ def run(image_path: str, origin_iata: str, dest_iata: str,
         sources = [h["title"] for h in hits]
 
     system, user = prompts.build(strategy, ctx)
-    explanation = generate(system, user, provider=llm)
+    explanation, model = generate(system, user, provider=llm)
 
     return PipelineResult(
         cv_top5=top5,
@@ -144,5 +145,6 @@ def run(image_path: str, origin_iata: str, dest_iata: str,
         feasibility=feas,
         explanation=explanation,
         sources=sources,
+        model=model,
         ocr=ocr_info,
     )

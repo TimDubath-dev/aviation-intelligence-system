@@ -109,7 +109,7 @@ def main() -> None:
                 print(f"  [{qi+1}/{len(QUESTIONS)}] {q['variant']} {q['origin']}→{q['dest']} "
                       f"| {strategy} | {provider}")
                 try:
-                    answer = generate(sys_msg, user_msg, provider=provider)
+                    answer, _ = generate(sys_msg, user_msg, provider=provider)
                 except Exception as e:
                     answer = f"ERROR: {e}"
                 results.append({
